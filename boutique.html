@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Autohaus Boutique – Parcourez notre sélection de +500 véhicules premium. BMW, Mercedes, Audi, Tesla et bien plus. Livraison en France 5-7 jours." />
+  <title>Boutique – Autohaus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c9a84c'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Montserrat,sans-serif' font-weight='900' font-size='14' fill='%23000'>AH</text></svg>"/>
+  <style>
+    .boutique-content { background: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header scrolled" id="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AH</div>
+        <div class="logo-text">
+          <span class="logo-main">Autohaus</span>
+          <span class="logo-sub">Vente & Export</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html" class="active">Nos Véhicules</a></li>
+        <li><a href="conditions.html">Conditions d'Export</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <div class="nav-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+          +33 1 23 45 67 89
+        </div>
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Nos Véhicules</a>
+    <a href="conditions.html">Conditions d'Export</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+33123456789" class="btn btn-primary">Appeler maintenant</a>
+  </nav>
+
+  <!-- ====== PAGE HERO ====== -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>Nos Véhicules</span>
+      </div>
+      <h1 class="page-title">Notre <span style="color:var(--accent)">Boutique</span></h1>
+      <p class="page-desc">Plus de 500 véhicules sélectionnés, inspectés et prêts à la livraison.</p>
+    </div>
+  </div>
+
+  <!-- ====== BOUTIQUE CONTENT ====== -->
+  <div class="boutique-content">
+    <div class="boutique-layout">
+
+      <!-- Sidebar Filters -->
+      <aside class="filters-sidebar">
+        <div class="filter-panel">
+          <h4>Marque</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes les marques</label>
+            <label class="filter-checkbox"><input type="checkbox"> BMW</label>
+            <label class="filter-checkbox"><input type="checkbox"> Mercedes-Benz</label>
+            <label class="filter-checkbox"><input type="checkbox"> Audi</label>
+            <label class="filter-checkbox"><input type="checkbox"> Volkswagen</label>
+            <label class="filter-checkbox"><input type="checkbox"> Renault</label>
+            <label class="filter-checkbox"><input type="checkbox"> Peugeot</label>
+            <label class="filter-checkbox"><input type="checkbox"> Tesla</label>
+            <label class="filter-checkbox"><input type="checkbox"> Porsche</label>
+            <label class="filter-checkbox"><input type="checkbox"> Toyota</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Budget</h4>
+          <div class="price-range">
+            <div class="price-inputs">
+              <input type="number" placeholder="Min €" min="0">
+              <input type="number" placeholder="Max €" max="200000">
+            </div>
+            <button class="btn btn-primary" style="width:100%; justify-content:center; padding:10px;">Appliquer</button>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Carburant</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Tous</label>
+            <label class="filter-checkbox"><input type="checkbox"> Essence</label>
+            <label class="filter-checkbox"><input type="checkbox"> Diesel</label>
+            <label class="filter-checkbox"><input type="checkbox"> Électrique</label>
+            <label class="filter-checkbox"><input type="checkbox"> Hybride</label>
+            <label class="filter-checkbox"><input type="checkbox"> GPL</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Année</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2024 - 2026</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2021 - 2023</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2018 - 2020</label>
+            <label class="filter-checkbox"><input type="checkbox"> Avant 2018</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Transmission</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes</label>
+            <label class="filter-checkbox"><input type="checkbox"> Automatique</label>
+            <label class="filter-checkbox"><input type="checkbox"> Manuelle</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Vehicle Grid -->
+      <div>
+        <div class="boutique-header">
+          <span class="results-count"><span>24</span> véhicules trouvés</span>
+          <select class="sort-select">
+            <option>Trier par : Prix croissant</option>
+            <option>Prix décroissant</option>
+            <option>Plus récent</option>
+            <option>Kilométrage croissant</option>
+          </select>
+        </div>
+
+        <div class="boutique-grid">
+
+          <!-- V1 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 48 122 L 48 106 Q 50 94 64 91 L 114 80 Q 130 58 162 50 L 246 49 Q 278 50 300 66 L 336 90 Q 352 93 354 106 L 354 122 Z" fill="#252525" stroke="#2f2f2f" stroke-width="1.5"/>
+                <path d="M 124 90 Q 132 63 162 53 L 246 52 L 246 90 Z" fill="#1a2535" opacity="0.95"/>
+                <path d="M 250 52 L 246 52 Q 274 53 294 66 L 310 90 L 250 90 Z" fill="#1a2535" opacity="0.95"/>
+                <line x1="246" y1="52" x2="246" y2="90" stroke="#333" stroke-width="2.5"/>
+                <circle cx="114" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="114" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="114" cy="130" r="4" fill="#c9a84c"/>
+                <circle cx="290" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="290" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="290" cy="130" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge">Disponible</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">BMW Série 5 — 530d xDrive</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2021 · 48 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Diesel · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">38 900 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V2 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 45 126 L 45 108 Q 47 95 64 92 L 108 82 Q 128 58 168 50 L 242 49 Q 282 51 305 70 L 342 92 Q 356 96 358 110 L 358 126 Z" fill="#1e2a1e" stroke="#2a3a2a" stroke-width="1.5"/>
+                <path d="M 124 90 Q 138 65 168 54 L 242 53 L 242 90 Z" fill="#162535" opacity="0.95"/>
+                <path d="M 246 53 L 242 53 Q 278 54 300 70 L 316 90 L 246 90 Z" fill="#162535" opacity="0.95"/>
+                <line x1="242" y1="53" x2="242" y2="90" stroke="#2a3a2a" stroke-width="2.5"/>
+                <circle cx="110" cy="132" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="110" cy="132" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="110" cy="132" r="4" fill="#c9a84c"/>
+                <circle cx="292" cy="132" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="292" cy="132" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="292" cy="132" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge new">Nouveau</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Mercedes GLC 300 — 4Matic</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2023 · 12 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Essence · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">54 500 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V3 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 46 124 L 46 104 Q 48 91 68 88 L 116 76 Q 140 52 175 45 L 244 44 Q 275 45 296 60 L 330 88 Q 348 92 350 106 L 350 124 Z" fill="#1a1a2e" stroke="#22224a" stroke-width="1.5"/>
+                <path d="M 130 86 Q 144 62 175 50 L 244 49 L 244 86 Z" fill="#162040" opacity="0.95"/>
+                <path d="M 248 49 L 244 49 Q 271 50 291 63 L 311 86 L 248 86 Z" fill="#162040" opacity="0.95"/>
+                <path d="M 185 18 L 175 34 L 186 34 L 176 50 L 200 28 L 188 28 Z" fill="#c9a84c" opacity="0.8"/>
+                <circle cx="110" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="110" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="110" cy="130" r="4" fill="#c9a84c"/>
+                <circle cx="287" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="287" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="287" cy="130" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge promo">Promo</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Tesla Model 3 — Long Range AWD</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2022 · 32 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Électrique · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">32 900 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V4 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 50 120 L 50 102 Q 52 90 70 87 L 118 76 Q 136 55 168 48 L 240 47 Q 270 48 290 63 L 326 87 Q 342 90 344 102 L 344 120 Z" fill="#2a1a0e" stroke="#3a2a1e" stroke-width="1.5"/>
+                <path d="M 126 87 Q 138 60 168 50 L 240 49 L 240 87 Z" fill="#1e1408" opacity="0.95"/>
+                <path d="M 244 49 L 240 49 Q 268 50 288 63 L 304 87 L 244 87 Z" fill="#1e1408" opacity="0.95"/>
+                <line x1="240" y1="49" x2="240" y2="87" stroke="#3a2a1e" stroke-width="2.5"/>
+                <circle cx="112" cy="126" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="112" cy="126" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="112" cy="126" r="4" fill="#c9a84c"/>
+                <circle cx="284" cy="126" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="284" cy="126" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="284" cy="126" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge">Disponible</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Audi Q5 — 45 TFSI Quattro</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2022 · 29 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Essence · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">46 200 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V5 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 48 125 L 48 107 Q 50 95 66 92 L 112 82 Q 132 60 165 52 L 238 51 Q 268 52 290 66 L 324 90 Q 338 93 340 107 L 340 125 Z" fill="#222" stroke="#2f2f2f" stroke-width="1.5"/>
+                <path d="M 120 90 Q 132 64 165 55 L 238 54 L 238 90 Z" fill="#1a2535" opacity="0.95"/>
+                <path d="M 242 54 L 238 54 Q 265 55 287 67 L 303 90 L 242 90 Z" fill="#1a2535" opacity="0.95"/>
+                <line x1="238" y1="54" x2="238" y2="90" stroke="#333" stroke-width="2.5"/>
+                <!-- Hybrid icon -->
+                <path d="M 190 18 L 182 30 L 191 30 L 183 44 L 204 24 L 193 24 Z" fill="#2a9d5c" opacity="0.8"/>
+                <circle cx="112" cy="131" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="112" cy="131" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="112" cy="131" r="4" fill="#c9a84c"/>
+                <circle cx="283" cy="131" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="283" cy="131" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="283" cy="131" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge new">Nouveau</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Toyota RAV4 — Hybride 4x4</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2024 · 8 500 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Hybride · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">41 800 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V6 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 50 122 L 50 105 Q 52 94 68 91 L 114 81 Q 130 60 162 53 L 240 52 Q 270 53 290 67 L 326 90 Q 340 93 342 105 L 342 122 Z" fill="#1a0d0d" stroke="#2a1515" stroke-width="1.5"/>
+                <path d="M 122 90 Q 132 63 162 56 L 240 55 L 240 90 Z" fill="#14080a" opacity="0.95"/>
+                <path d="M 244 55 L 240 55 Q 267 56 288 68 L 304 90 L 244 90 Z" fill="#14080a" opacity="0.95"/>
+                <line x1="240" y1="55" x2="240" y2="90" stroke="#2a1515" stroke-width="2.5"/>
+                <circle cx="112" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="112" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="112" cy="128" r="4" fill="#c9a84c"/>
+                <circle cx="284" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="284" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="284" cy="128" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge promo">Promo</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Porsche Cayenne — 3.0 V6</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2020 · 62 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Essence · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">68 500 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V7 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 52 122 L 52 106 Q 54 95 70 92 L 115 83 Q 132 63 164 56 L 236 55 Q 265 56 283 69 L 318 91 Q 330 94 332 106 L 332 122 Z" fill="#252525" stroke="#303030" stroke-width="1.5"/>
+                <path d="M 122 91 Q 132 66 164 59 L 236 58 L 236 91 Z" fill="#1a2535" opacity="0.95"/>
+                <path d="M 240 58 L 236 58 Q 263 59 281 70 L 296 91 L 240 91 Z" fill="#1a2535" opacity="0.95"/>
+                <line x1="236" y1="58" x2="236" y2="91" stroke="#333" stroke-width="2.5"/>
+                <circle cx="114" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="114" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="114" cy="128" r="4" fill="#c9a84c"/>
+                <circle cx="278" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="278" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="278" cy="128" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge">Disponible</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Renault Mégane E-Tech — Électrique</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2023 · 15 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Électrique · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">28 500 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V8 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 50 120 L 50 103 Q 52 92 68 89 L 112 80 Q 128 60 160 53 L 234 52 Q 264 53 284 67 L 320 89 Q 334 92 336 103 L 336 120 Z" fill="#0f1a0f" stroke="#1a2a1a" stroke-width="1.5"/>
+                <path d="M 118 89 Q 128 63 160 56 L 234 55 L 234 89 Z" fill="#0a1408" opacity="0.95"/>
+                <path d="M 238 55 L 234 55 Q 261 56 282 68 L 298 89 L 238 89 Z" fill="#0a1408" opacity="0.95"/>
+                <line x1="234" y1="55" x2="234" y2="89" stroke="#1a2a1a" stroke-width="2.5"/>
+                <circle cx="110" cy="126" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="110" cy="126" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="110" cy="126" r="4" fill="#c9a84c"/>
+                <circle cx="280" cy="126" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="280" cy="126" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="280" cy="126" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge">Disponible</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Peugeot 3008 — 1.6 PureTech 180</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2022 · 38 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Essence · Auto.
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">24 900 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V9 -->
+          <div class="vehicle-card fade-up">
+            <div class="vehicle-img">
+              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
+                <path d="M 48 122 L 48 106 Q 50 95 65 92 L 110 82 Q 128 62 160 55 L 238 54 Q 268 55 289 69 L 325 91 Q 339 94 341 106 L 341 122 Z" fill="#1a1a1a" stroke="#282828" stroke-width="1.5"/>
+                <path d="M 118 91 Q 128 65 160 58 L 238 57 L 238 91 Z" fill="#1a2535" opacity="0.95"/>
+                <path d="M 242 57 L 238 57 Q 265 58 287 70 L 303 91 L 242 91 Z" fill="#1a2535" opacity="0.95"/>
+                <line x1="238" y1="57" x2="238" y2="91" stroke="#282828" stroke-width="2.5"/>
+                <circle cx="108" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="108" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="108" cy="128" r="4" fill="#c9a84c"/>
+                <circle cx="282" cy="128" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
+                <circle cx="282" cy="128" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="282" cy="128" r="4" fill="#c9a84c"/>
+              </svg>
+              <span class="vehicle-badge new">Nouveau</span>
+            </div>
+            <div class="vehicle-body">
+              <div class="vehicle-name">Volkswagen Golf 8 — GTI 245ch</div>
+              <div class="vehicle-specs">
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2024 · 5 000 km
+                </div>
+                <div class="vehicle-spec">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Essence · DSG
+                </div>
+              </div>
+              <div class="vehicle-footer">
+                <div class="vehicle-price">36 400 € <span>TTC</span></div>
+                <a href="contact.html" class="vehicle-btn">Réserver</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex; justify-content:center; gap:8px; margin-top:48px;">
+          <button style="width:40px; height:40px; background:var(--accent); color:#000; border:none; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer;">1</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">2</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">3</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">AH</div>
+            <div class="logo-text">
+              <span class="logo-main">Autohaus</span>
+              <span class="logo-sub">Vente & Export</span>
+            </div>
+          </a>
+          <p>Votre spécialiste de la vente et de l'export de véhicules. Livraison sécurisée partout en France et à l'international. Garantie satisfait ou remboursé 14 jours.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Nos Véhicules</a></li>
+            <li><a href="conditions.html">Conditions d'Export</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Livraison France</a></li>
+            <li><a href="#">Export DOM-TOM</a></li>
+            <li><a href="#">Export International</a></li>
+            <li><a href="#">Garantie 14 jours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+            <li><a href="mailto:contact@autohaus.fr">contact@autohaus.fr</a></li>
+            <li><a href="#">Lun – Ven : 9h – 18h</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Autohaus. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
