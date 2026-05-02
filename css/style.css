@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: calc(var(--header-h) + 100px) 60px 140px;
+  padding: calc(var(--header-h) + 100px) 60px 140px 32px;
   text-align: left;
 }
 
