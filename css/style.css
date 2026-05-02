@@ -1001,79 +1001,158 @@ h1, h2, h3, h4, h5 {
 }
 
 /* === TESTIMONIALS === */
-.testimonials {
+/* === AVIS CLIENTS === */
+.avis-section {
   background: var(--primary);
 }
 
-.testimonials-grid {
+.avis-global {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.avis-global-score {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.avis-global-right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.avis-global-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.avis-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-top: 48px;
 }
 
-.testimonial-card {
+.avis-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px;
   transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.testimonial-card:hover {
-  border-color: rgba(224, 99, 32, 0.2);
+.avis-card:hover {
+  border-color: rgba(224, 99, 32, 0.3);
   transform: translateY(-4px);
   box-shadow: var(--shadow-card);
 }
 
-.stars {
+.avis-header {
   display: flex;
-  gap: 3px;
-  margin-bottom: 16px;
+  align-items: flex-start;
+  gap: 14px;
 }
 
-.star {
-  width: 16px;
-  height: 16px;
-  color: var(--accent);
-}
-
-.testimonial-text {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.8;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.author-avatar {
-  width: 40px;
-  height: 40px;
+.avis-photo {
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.875rem;
-  color: #000;
+  overflow: hidden;
   flex-shrink: 0;
+  border: 2px solid rgba(224, 99, 32, 0.3);
 }
 
-.author-info .name {
+.avis-photo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.avis-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avis-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--white);
 }
 
-.author-info .location {
+.avis-location {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.avis-location svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  stroke: var(--accent);
+}
+
+.avis-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  color: var(--accent);
+  fill: var(--accent);
+}
+
+.avis-score {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-left: 4px;
+}
+
+.avis-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-style: italic;
+  flex: 1;
+}
+
+.avis-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.avis-vehicle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(224, 99, 32, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.avis-date {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
@@ -1790,7 +1869,7 @@ h1, h2, h3, h4, h5 {
   .vehicles-grid { grid-template-columns: repeat(2, 1fr); }
   .process-steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
   .process-steps::before { display: none; }
-  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .avis-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
   .boutique-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1815,7 +1894,7 @@ h1, h2, h3, h4, h5 {
   .section { padding: 70px 20px; }
   .services-grid { grid-template-columns: 1fr; }
   .vehicles-grid { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
+  .avis-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .form-grid { grid-template-columns: 1fr; }
   .boutique-grid { grid-template-columns: 1fr; }
