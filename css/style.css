@@ -1808,15 +1808,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .info-box {
-  background: rgba(224, 99, 32, 0.08);
-  border: 1px solid rgba(224, 99, 32, 0.25);
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
   padding: 20px 24px;
   margin: 20px 0;
 }
 
 .info-box p {
-  color: var(--accent);
+  color: var(--text);
   margin: 0;
   font-size: 0.875rem;
 }
