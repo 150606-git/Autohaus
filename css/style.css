@@ -376,10 +376,10 @@ h1, h2, h3, h4, h5 {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 880px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: calc(var(--header-h) + 100px) 32px 140px;
-  text-align: center;
+  padding: calc(var(--header-h) + 100px) 60px 140px;
+  text-align: left;
 }
 
 .hero-eyebrow {
@@ -398,13 +398,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-photo-title {
-  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-size: clamp(3rem, 6vw, 5.2rem);
   font-weight: 900;
   color: #ffffff;
   line-height: 1.05;
   margin-bottom: 28px;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+  max-width: 620px;
 }
 
 .hero-photo-title span {
@@ -415,14 +416,14 @@ h1, h2, h3, h4, h5 {
   font-size: 1.1rem;
   color: rgba(255,255,255,0.82);
   line-height: 1.75;
-  max-width: 580px;
-  margin: 0 auto 48px;
+  max-width: 520px;
+  margin: 0 0 48px;
 }
 
 .hero-photo-actions {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   flex-wrap: wrap;
 }
