@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c9a84c'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Montserrat,sans-serif' font-weight='900' font-size='14' fill='%23000'>AH</text></svg>"/>
   <style>
-    .boutique-content { background: var(--primary); }
+    .boutique-content { background: #ffffff; }
   </style>
 </head>
 <body>
@@ -144,23 +144,204 @@
         <div class="boutique-grid">
 
           <!-- V1 -->
-          <div class="vehicle-card fade-up">
-            <div class="vehicle-img">
-              <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="200" cy="162" rx="160" ry="10" fill="rgba(201,168,76,0.07)"/>
-                <path d="M 48 122 L 48 106 Q 50 94 64 91 L 114 80 Q 130 58 162 50 L 246 49 Q 278 50 300 66 L 336 90 Q 352 93 354 106 L 354 122 Z" fill="#252525" stroke="#2f2f2f" stroke-width="1.5"/>
-                <path d="M 124 90 Q 132 63 162 53 L 246 52 L 246 90 Z" fill="#1a2535" opacity="0.95"/>
-                <path d="M 250 52 L 246 52 Q 274 53 294 66 L 310 90 L 250 90 Z" fill="#1a2535" opacity="0.95"/>
-                <line x1="246" y1="52" x2="246" y2="90" stroke="#333" stroke-width="2.5"/>
-                <circle cx="114" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
-                <circle cx="114" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
-                <circle cx="114" cy="130" r="4" fill="#c9a84c"/>
-                <circle cx="290" cy="130" r="24" fill="#111" stroke="#2a2a2a" stroke-width="2"/>
-                <circle cx="290" cy="130" r="16" fill="#161616" stroke="#c9a84c" stroke-width="1.5"/>
-                <circle cx="290" cy="130" r="4" fill="#c9a84c"/>
-              </svg>
-              <span class="vehicle-badge">Disponible</span>
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500&q=80" alt="BMW Série 5">
+              <span class="b-badge">Disponible</span>
             </div>
+            <div class="b-card-body">
+              <span class="b-category">Berline</span>
+              <h3 class="b-name">BMW Série 5 — 530d xDrive</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2021</span>
+                <span class="b-spec-tag">48 000 km</span>
+                <span class="b-spec-tag">Diesel</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">38 900 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V2 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80" alt="Mercedes GLC">
+              <span class="b-badge b-badge-new">Nouveau</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV</span>
+              <h3 class="b-name">Mercedes GLC 300 — 4Matic</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2023</span>
+                <span class="b-spec-tag">12 000 km</span>
+                <span class="b-spec-tag">Essence</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">54 500 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V3 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3">
+              <span class="b-badge b-badge-promo">Promo</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">Électrique</span>
+              <h3 class="b-name">Tesla Model 3 — Long Range AWD</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2022</span>
+                <span class="b-spec-tag">32 000 km</span>
+                <span class="b-spec-tag">Électrique</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">32 900 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V4 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500&q=80" alt="Audi Q5">
+              <span class="b-badge">Disponible</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV</span>
+              <h3 class="b-name">Audi Q5 — 45 TFSI Quattro</h3>
+              <div class="b-stars">★★★★☆</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2022</span>
+                <span class="b-spec-tag">29 000 km</span>
+                <span class="b-spec-tag">Essence</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">46 200 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V5 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&q=80" alt="Toyota RAV4">
+              <span class="b-badge b-badge-new">Nouveau</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV Hybride</span>
+              <h3 class="b-name">Toyota RAV4 — Hybride 4x4</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2024</span>
+                <span class="b-spec-tag">8 500 km</span>
+                <span class="b-spec-tag">Hybride</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">41 800 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V6 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80" alt="Porsche Cayenne">
+              <span class="b-badge b-badge-promo">Promo</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV Premium</span>
+              <h3 class="b-name">Porsche Cayenne — 3.0 V6</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2020</span>
+                <span class="b-spec-tag">62 000 km</span>
+                <span class="b-spec-tag">Essence</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">68 500 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V7 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=500&q=80" alt="Renault Mégane E-Tech">
+              <span class="b-badge">Disponible</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">Électrique</span>
+              <h3 class="b-name">Renault Mégane E-Tech</h3>
+              <div class="b-stars">★★★★☆</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2023</span>
+                <span class="b-spec-tag">15 000 km</span>
+                <span class="b-spec-tag">Électrique</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">28 500 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V8 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80" alt="Peugeot 3008">
+              <span class="b-badge">Disponible</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV</span>
+              <h3 class="b-name">Peugeot 3008 — 1.6 PureTech 180</h3>
+              <div class="b-stars">★★★★☆</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2022</span>
+                <span class="b-spec-tag">38 000 km</span>
+                <span class="b-spec-tag">Essence</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">24 900 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- V9 -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500&q=80" alt="Volkswagen Golf">
+              <span class="b-badge b-badge-new">Nouveau</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">Compacte</span>
+              <h3 class="b-name">Volkswagen Golf 8 — GTI 245ch</h3>
+              <div class="b-stars">★★★★★</div>
+              <div class="b-specs">
+                <span class="b-spec-tag">2024</span>
+                <span class="b-spec-tag">5 000 km</span>
+                <span class="b-spec-tag">Essence</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">36 400 €</div>
+                <a href="contact.html" class="b-btn">Voir détails</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
             <div class="vehicle-body">
               <div class="vehicle-name">BMW Série 5 — 530d xDrive</div>
               <div class="vehicle-specs">

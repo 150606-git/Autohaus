@@ -1681,8 +1681,141 @@ h1, h2, h3, h4, h5 {
 
 .boutique-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+/* --- Boutique cards --- */
+.b-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+}
+
+.b-card-img {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.b-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.b-card:hover .b-card-img img {
+  transform: scale(1.05);
+}
+
+.b-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--accent);
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.b-badge-new {
+  background: #2a9d5c;
+  color: #fff;
+}
+
+.b-badge-promo {
+  background: #e63946;
+  color: #fff;
+}
+
+.b-card-body {
+  padding: 16px;
+}
+
+.b-category {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.b-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.b-stars {
+  color: #f5a623;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.b-specs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.b-spec-tag {
+  font-size: 0.68rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.b-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.b-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.b-btn {
+  padding: 7px 14px;
+  background: var(--accent);
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.b-btn:hover {
+  background: var(--accent-dark);
+  color: #000;
 }
 
 /* === CONDITIONS PAGE === */
