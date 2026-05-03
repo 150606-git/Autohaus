@@ -1049,7 +1049,7 @@ h1, h2, h3, h4, h5 {
 
 /* === EXPLORE SECTION === */
 .explore-section {
-  background: #1e1a16;
+  background: var(--secondary);
   padding: 100px 32px;
   position: relative;
   overflow: hidden;
@@ -1059,7 +1059,7 @@ h1, h2, h3, h4, h5 {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 0%, rgba(224, 99, 32, 0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(224, 99, 32, 0.05) 0%, transparent 60%);
 }
 
 .explore-inner {
@@ -1076,7 +1076,7 @@ h1, h2, h3, h4, h5 {
 .explore-title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text);
   line-height: 1;
   letter-spacing: -0.03em;
 }
@@ -1087,7 +1087,7 @@ h1, h2, h3, h4, h5 {
 
 .explore-desc {
   font-size: 1rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   max-width: 340px;
   line-height: 1.7;
 }
@@ -1099,17 +1099,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .explore-card {
-  background: #2a2520;
-  border: 1px solid rgba(255,255,255,0.06);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition);
+  text-align: center;
 }
 
 .explore-card:hover {
   border-color: var(--accent);
   transform: translateY(-8px);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.1);
 }
 
 .explore-img {
@@ -1133,19 +1134,22 @@ h1, h2, h3, h4, h5 {
 
 .explore-card-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .explore-cat-name {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text);
   margin-bottom: 16px;
   letter-spacing: -0.02em;
 }
 
 .explore-cat-desc {
   font-size: 0.84rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 24px;
 }
