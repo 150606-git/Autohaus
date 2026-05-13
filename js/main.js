@@ -159,4 +159,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Vehicle photo thumbnails ───────────────────────
+  document.querySelectorAll('.b-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const card = thumb.closest('.b-card');
+      card.querySelector('.b-main-img').src = thumb.src;
+      card.querySelectorAll('.b-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
 });
