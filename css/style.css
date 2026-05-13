@@ -1818,6 +1818,91 @@ h1, h2, h3, h4, h5 {
   color: #000;
 }
 
+.b-thumbs {
+  display: flex;
+  gap: 4px;
+  padding: 6px 8px;
+  background: #f2f2f2;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.b-thumbs::-webkit-scrollbar { display: none; }
+
+.b-thumb {
+  width: 58px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.55;
+  flex-shrink: 0;
+  transition: opacity 0.2s, outline 0.15s;
+}
+
+.b-thumb:hover,
+.b-thumb.active {
+  opacity: 1;
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.b-count {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.b-equip {
+  font-size: 0.72rem;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.b-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.b-guarantee,
+.b-no-accident {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #2a9d5c;
+  background: rgba(42,157,92,0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.b-card-img--pending {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #bbb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 /* === CONDITIONS PAGE === */
 .conditions-layout {
   max-width: 900px;
