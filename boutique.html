@@ -1,1 +1,443 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImZyIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiIC8+CiAgPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IkF1dG9oYXVzIEJvdXRpcXVlIOKAkyBQYXJjb3VyZXogbm90cmUgc8OpbGVjdGlvbiBkZSArNTAwIHbDqWhpY3VsZXMgcHJlbWl1bS4gQk1XLCBNZXJjZWRlcywgQXVkaSwgVGVzbGEgZXQgYmllbiBwbHVzLiBMaXZyYWlzb24gZW4gRnJhbmNlIDUtNyBqb3Vycy4iIC8+CiAgPHRpdGxlPkJvdXRpcXVlIOKAkyBBdXRvaGF1czwvdGl0bGU+CiAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJjc3Mvc3R5bGUuY3NzIiAvPgogIDxsaW5rIHJlbD0iaWNvbiIgdHlwZT0iaW1hZ2Uvc3ZnK3htbCIgaHJlZj0iZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMzIgMzInPjxyZWN0IHdpZHRoPSczMicgaGVpZ2h0PSczMicgcng9JzYnIGZpbGw9JyUyM2M5YTg0YycvPjx0ZXh0IHg9JzUwJTI1JyB5PSc1NSUyNScgdGV4dC1hbmNob3I9J21pZGRsZScgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZScgZm9udC1mYW1pbHk9J01vbnRzZXJyYXQsc2Fucy1zZXJpZicgZm9udC13ZWlnaHQ9JzkwMCcgZm9udC1zaXplPScxNCcgZmlsbD0nJTIzMDAwJz5BSDwvdGV4dD48L3N2Zz4iLz4KICA8c3R5bGU+CiAgICAuYm91dGlxdWUtY29udGVudCB7IGJhY2tncm91bmQ6ICNmZmZmZmY7IH0KICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5PgoKICA8IS0tID09PT09PSBIRUFERVIgPT09PT09IC0tPgogIDxoZWFkZXIgY2xhc3M9ImhlYWRlciBzY3JvbGxlZCIgaWQ9ImhlYWRlciI+CiAgICA8bmF2IGNsYXNzPSJuYXYiPgogICAgICA8YSBocmVmPSJpbmRleC5odG1sIiBjbGFzcz0ibG9nbyI+CiAgICAgICAgPGRpdiBjbGFzcz0ibG9nby1pY29uIj5BSDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImxvZ28tdGV4dCI+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibG9nby1tYWluIj5BdXRvaGF1czwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsb2dvLXN1YiI+VmVudGUgJiBFeHBvcnQ8L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvYT4KICAgICAgPHVsIGNsYXNzPSJuYXYtbGlua3MiPgogICAgICAgIDxsaT48YSBocmVmPSJpbmRleC5odG1sIj5BY2N1ZWlsPC9hPjwvbGk+CiAgICAgICAgPGxpPjxhIGhyZWY9ImJvdXRpcXVlLmh0bWwiIGNsYXNzPSJhY3RpdmUiPk5vcyBWw6loaWN1bGVzPC9hPjwvbGk+CiAgICAgICAgPGxpPjxhIGhyZWY9ImNvbmRpdGlvbnMuaHRtbCI+Q29uZGl0aW9ucyBkJ0V4cG9ydDwvYT48L2xpPgogICAgICAgIDxsaT48YSBocmVmPSJjb250YWN0Lmh0bWwiPkNvbnRhY3Q8L2E+PC9saT4KICAgICAgPC91bD4KICAgICAgPGRpdiBjbGFzcz0ibmF2LWN0YSI+CiAgICAgICAgPGRpdiBjbGFzcz0ibmF2LXBob25lIj4KICAgICAgICAgIDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDdBMTkuNSAxOS41IDAgMCAxIDQuNjkgMTMuNiAxOS43OSAxOS43OSAwIDAgMSAxLjYxIDUgMiAyIDAgMCAxIDMuNiAzaDNhMiAyIDAgMCAxIDIgMS43MiAxMi44NCAxMi44NCAwIDAgMCAuNyAyLjgxIDIgMiAwIDAgMS0uNDUgMi4xMUw4LjA5IDEwLjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTcuOTJ6Ii8+PC9zdmc+CiAgICAgICAgICArMzMgNyA1NiA4NCAxMiA5NQogICAgICAgIDwvZGl2PgogICAgICAgIDxhIGhyZWY9ImNvbnRhY3QuaHRtbCIgY2xhc3M9ImJ0biBidG4tcHJpbWFyeSI+Tm91cyBjb250YWN0ZXI8L2E+CiAgICAgIDwvZGl2PgogICAgICA8YnV0dG9uIGNsYXNzPSJoYW1idXJnZXIiIGlkPSJoYW1idXJnZXIiIGFyaWEtbGFiZWw9Ik1lbnUiPgogICAgICAgIDxzcGFuPjwvc3Bhbj48c3Bhbj48L3NwYW4+PHNwYW4+PC9zcGFuPgogICAgICA8L2J1dHRvbj4KICAgIDwvbmF2PgogIDwvaGVhZGVyPgoKICA8bmF2IGNsYXNzPSJtb2JpbGUtbmF2IiBpZD0ibW9iaWxlTmF2Ij4KICAgIDxhIGhyZWY9ImluZGV4Lmh0bWwiPkFjY3VlaWw8L2E+CiAgICA8YSBocmVmPSJib3V0aXF1ZS5odG1sIj5Ob3MgVsOpaGljdWxlczwvYT4KICAgIDxhIGhyZWY9ImNvbmRpdGlvbnMuaHRtbCI+Q29uZGl0aW9ucyBkJ0V4cG9ydDwvYT4KICAgIDxhIGhyZWY9ImNvbnRhY3QuaHRtbCI+Q29udGFjdDwvYT4KICAgIDxhIGhyZWY9InRlbDorMzM3NTY4NDEyOTUiIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiPkFwcGVsZXIgbWFpbnRlbmFudDwvYT4KICA8L25hdj4KCiAgPCEtLSA9PT09PT0gUEFHRSBIRVJPID09PT09PSAtLT4KICA8ZGl2IGNsYXNzPSJwYWdlLWhlcm8iPgogICAgPGRpdiBjbGFzcz0icGFnZS1oZXJvLWlubmVyIj4KICAgICAgPGRpdiBjbGFzcz0iYnJlYWRjcnVtYiI+CiAgICAgICAgPGEgaHJlZj0iaW5kZXguaHRtbCI+QWNjdWVpbDwvYT4KICAgICAgICA8c3Bhbj7igLo8L3NwYW4+CiAgICAgICAgPHNwYW4+Tm9zIFbDqWhpY3VsZXM8L3NwYW4+CiAgICAgIDwvZGl2PgogICAgICA8aDEgY2xhc3M9InBhZ2UtdGl0bGUiPk5vdHJlIDxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS1hY2NlbnQpIj5Cb3V0aXF1ZTwvc3Bhbj48L2gxPgogICAgPC9kaXY+CiAgPC9kaXY+CgogIDwhLS0gPT09PT09IEJPVVRJUVVFIENPTlRFTlQgPT09PT09IC0tPgogIDxkaXYgY2xhc3M9ImJvdXRpcXVlLWNvbnRlbnQiPgogICAgPGRpdiBjbGFzcz0iYm91dGlxdWUtbGF5b3V0Ij4KCiAgICAgIDwhLS0gU2lkZWJhciBGaWx0ZXJzIC0tPgogICAgICA8YXNpZGUgY2xhc3M9ImZpbHRlcnMtc2lkZWJhciI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmlsdGVyLXBhbmVsIj4KICAgICAgICAgIDxoND5NYXJxdWU8L2g0PgogICAgICAgICAgPGRpdiBjbGFzcz0iZmlsdGVyLW9wdGlvbnMiPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBjaGVja2VkPiBUb3V0ZXMgbGVzIG1hcnF1ZXM8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gQk1XPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IE1lcmNlZGVzLUJlbno8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gQXVkaTwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giPiBWb2xrc3dhZ2VuPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IFJlbmF1bHQ8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gUGV1Z2VvdDwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giPiBUZXNsYTwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giPiBQb3JzY2hlPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IFRveW90YTwvbGFiZWw+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iZmlsdGVyLXBhbmVsIj4KICAgICAgICAgIDxoND5CdWRnZXQ8L2g0PgogICAgICAgICAgPGRpdiBjbGFzcz0icHJpY2UtcmFuZ2UiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcmljZS1pbnB1dHMiPgogICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHBsYWNlaG9sZGVyPSJNaW4g4oKsIiBtaW49IjAiPgogICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIHBsYWNlaG9sZGVyPSJNYXgg4oKsIiBtYXg9IjIwMDAwMCI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiIHN0eWxlPSJ3aWR0aDoxMDAlOyBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyOyBwYWRkaW5nOjEwcHg7Ij5BcHBsaXF1ZXI8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJmaWx0ZXItcGFuZWwiPgogICAgICAgICAgPGg0PkNhcmJ1cmFudDwvaDQ+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJmaWx0ZXItb3B0aW9ucyI+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giIGNoZWNrZWQ+IFRvdXM8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gRXNzZW5jZTwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giPiBEaWVzZWw8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gw4lsZWN0cmlxdWU8L2xhYmVsPgogICAgICAgICAgICA8bGFiZWwgY2xhc3M9ImZpbHRlci1jaGVja2JveCI+PGlucHV0IHR5cGU9ImNoZWNrYm94Ij4gSHlicmlkZTwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzcz0iZmlsdGVyLWNoZWNrYm94Ij48aW5wdXQgdHlwZT0iY2hlY2tib3giPiBHUEw8L2xhYmVsPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3M9ImZpbHRlci1wYW5lbCI+CiAgICAgICAgICA8aDQ+QW5uw6llPC9oND4KICAgICAgICAgIDxkaXYgY2xhc3M9ImZpbHRlci1vcHRpb25zIj4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgY2hlY2tlZD4gVG91dGVzPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IDIwMjQgLSAyMDI2PC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3kiPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IDIwMjEgLSAyMDIzPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IDIwMTggLSAyMDIwPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IEF2YW50IDIwMTg8L2xhYmVsPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3M9ImZpbHRlci1wYW5lbCI+CiAgICAgICAgICA8aDQ+VHJhbnNtaXNzaW9uPC9oND4KICAgICAgICAgIDxkaXYgY2xhc3M9ImZpbHRlci1vcHRpb25zIj4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgY2hlY2tlZD4gVG91dGVzPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IEF1dG9tYXRpcXVlPC9sYWJlbD4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmaWx0ZXItY2hlY2tib3giPjxpbnB1dCB0eXBlPSJjaGVja2JveCI+IE1hbnVlbGxlPC9sYWJlbD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2FzaWRlPgoKICAgICAgPCEtLSBWZWhpY2xlIEdyaWQgLS0+CiAgICAgIDxkaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iYm91dGlxdWUtaGVhZGVyIj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJyZXN1bHRzLWNvdW50Ij48c3Bhbj41PC9zcGFuPiB2w6loaWN1bGVzIHRyb3V2w6lzPC9zcGFuPgogICAgICAgICAgPHNlbGVjdCBjbGFzcz0ic29ydC1zZWxlY3QiPgogICAgICAgICAgICA8b3B0aW9uPlRyaWVyIHBhciA6IFByaXggY3JvaXNzYW50PC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24+UHJpeCBkw6ljcm9pc3NhbnQ8L29wdGlvbj4KICAgICAgICAgICAgPG9wdGlvbj5QbHVzIHLDqWNlbnQ8L29wdGlvbj4KICAgICAgICAgICAgPG9wdGlvbj5LaWxvbcOpdHJhZ2UgY3JvaXNzYW50PC9vcHRpb24+CiAgICAgICAgICA8L3NlbGVjdD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iYm91dGlxdWUtZ3JpZCI+CgogICAgICAgICAgPCEtLSBGb3JkIEt1Z2EgLS0+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQgZmFkZS11cCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItY2FyZC1pbWciPgogICAgICAgICAgICAgIDxpbWcgY2xhc3M9ImItbWFpbi1pbWciIHNyYz0iRm9yZCUyMEt1Z2EvMjAyNjAzMjlfMTIxNzE1MDAwX2lPUyUyMDMuanBnIiBhbHQ9IkZvcmQgS3VnYSAyLjAgVERDaSI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi16b29tLWljb24iPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMi41Ij48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PGxpbmUgeDE9IjIxIiB5MT0iMjEiIHgyPSIxNi42NSIgeTI9IjE2LjY1Ii8+PGxpbmUgeDE9IjExIiB5MT0iOCIgeDI9IjExIiB5Mj0iMTQiLz48bGluZSB4MT0iOCIgeTE9IjExIiB4Mj0iMTQiIHkyPSIxMSIvPjwvc3ZnPjwvZGl2PgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWJhZGdlIj5EaXNwb25pYmxlPC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWNvdW50Ij4mIzEyODI0NzsgMjQgcGhvdG9zPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi10aHVtYnMiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwS3VnYS8yMDI2MDMyOV8xMjE3MTUwMDBfaU9TJTIwMy5qcGciIGNsYXNzPSJiLXRodW1iIGFjdGl2ZSIgYWx0PSIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwS3VnYS8yMDI2MDMyOV8xMjE3MTUwMDBfaU9TJTIwNC5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBLdWdhLzIwMjYwMzI5XzEyMTcxNTAwMF9pT1MuanBnIiBjbGFzcz0iYi10aHVtYiIgYWx0PSIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwS3VnYS8yMDI2MDMyOV8xMjE3MTYwMDBfaU9TJTIwMS5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBLdWdhLzIwMjYwMzI5XzEyMjk0NjAwMF9pT1MlMjAxLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRm9yZCUyMEt1Z2EvMjAyNjAzMjlfMTIyOTQ3MDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQtYm9keSI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItY2F0ZWdvcnkiPlNVVjwvc3Bhbj4KICAgICAgICAgICAgICA8aDMgY2xhc3M9ImItbmFtZSI+Rm9yZCBLdWdhIDIuMCBURENpPC9oMz4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWVxdWlwIj5DcnVpc2UgJm1pZGRvdDsgREFCICZtaWRkb3Q7IEF0dGVsYWdlICZtaWRkb3Q7IEN1aXIgJm1pZGRvdDsgS2V5bGVzczwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItbWV0YSI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYi1ndWFyYW50ZWUiPiYjMTAwMDM7IEdhcmFudGllIDQgYW5zPC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItbm8tYWNjaWRlbnQiPiYjMTAwMDM7IEphbWFpcyBhY2NpZGVudCZlYWN1dGU7PC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItZm9vdGVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItcHJpY2UiPjMgNTAwICZldXJvOzwvZGl2PgogICAgICAgICAgICAgICAgPGEgaHJlZj0iY29udGFjdC5odG1sIiBjbGFzcz0iYi1idG4iPkNvbnRhY3RlcjwvYT4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8IS0tIEZvcmQgRXhwbG9yZXIgLS0+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQgZmFkZS11cCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItY2FyZC1pbWciPgogICAgICAgICAgICAgIDxpbWcgY2xhc3M9ImItbWFpbi1pbWciIHNyYz0iRm9yZCUyMEV4cGxvcmVyLzIwMjYwMzI5XzEyMTcwNDAwMF9pT1MlMjAxLmpwZyIgYWx0PSJGb3JkIEV4cGxvcmVyIDMuMCBBV0QgU1QtTGluZSI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi16b29tLWljb24iPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMi41Ij48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PGxpbmUgeDE9IjIxIiB5MT0iMjEiIHgyPSIxNi42NSIgeTI9IjE2LjY1Ii8+PGxpbmUgeDE9IjExIiB5MT0iOCIgeDI9IjExIiB5Mj0iMTQiLz48bGluZSB4MT0iOCIgeTE9IjExIiB4Mj0iMTQiIHkyPSIxMSIvPjwvc3ZnPjwvZGl2PgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWJhZGdlIGItYmFkZ2UtbmV3Ij5Ob3V2ZWF1PC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWNvdW50Ij4mIzEyODI0NzsgMjYgcGhvdG9zPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi10aHVtYnMiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwRXhwbG9yZXIvMjAyNjAzMjlfMTIxNzA0MDAwX2lPUyUyMDEuanBnIiBjbGFzcz0iYi10aHVtYiBhY3RpdmUiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRm9yZCUyMEV4cGxvcmVyLzIwMjYwMzI5XzEyMTcwNDAwMF9pT1MlMjAyLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRm9yZCUyMEV4cGxvcmVyLzIwMjYwMzI5XzEyMTcwNDAwMF9pT1MuanBnIiBjbGFzcz0iYi10aHVtYiIgYWx0PSIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwRXhwbG9yZXIvMjAyNjAzMjlfMTIxNzA1MDAwX2lPUyUyMDEuanBnIiBjbGFzcz0iYi10aHVtYiIgYWx0PSIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwRXhwbG9yZXIvMjAyNjAzMjlfMTIxNzA3MDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBFeHBsb3Jlci8yMDI2MDMyOV8xMjE3MTIwMDBfaU9TLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItY2FyZC1ib2R5Ij4KICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYi1jYXRlZ29yeSI+U1VWIEh5YnJpZGUgJmJ1bGw7IDcgcGxhY2VzPC9zcGFuPgogICAgICAgICAgICAgIDxoMyBjbGFzcz0iYi1uYW1lIj5Gb3JkIEV4cGxvcmVyIDMuMCBBV0QgU1QtTGluZTwvaDM+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1lcXVpcCI+NyBwbGFjZXMgJm1pZGRvdDsgTmF2aWdhdGlvbiAmbWlkZG90OyBDdWlyICZtaWRkb3Q7IEFDQyAmbWlkZG90OyBTLUxpbmU8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLW1ldGEiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItZ3VhcmFudGVlIj4mIzEwMDAzOyBHYXJhbnRpZSA0IGFuczwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLW5vLWFjY2lkZW50Ij4mIzEwMDAzOyBKYW1haXMgYWNjaWRlbnQmZWFjdXRlOzwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWZvb3RlciI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLXByaWNlIj43IDAwMCAmZXVybzs8L2Rpdj4KICAgICAgICAgICAgICAgIDxhIGhyZWY9ImNvbnRhY3QuaHRtbCIgY2xhc3M9ImItYnRuIj5Db250YWN0ZXI8L2E+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPCEtLSBEb2RnZSBEdXJhbmdvIC0tPgogICAgICAgICAgPGRpdiBjbGFzcz0iYi1jYXJkIGZhZGUtdXAiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQtaW1nIj4KICAgICAgICAgICAgICA8aW1nIGNsYXNzPSJiLW1haW4taW1nIiBzcmM9IkRvZGdlJTIwRHVyYW5nby8yMDI2MDMyOV8xMDAwNTEwMDBfaU9TLmpwZyIgYWx0PSJEb2RnZSBEdXJhbmdvIDUuNyBIRU1JIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLXpvb20taWNvbiI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjUiPjxjaXJjbGUgY3g9IjExIiBjeT0iMTEiIHI9IjgiLz48bGluZSB4MT0iMjEiIHkxPSIyMSIgeDI9IjE2LjY1IiB5Mj0iMTYuNjUiLz48bGluZSB4MT0iMTEiIHkxPSI4IiB4Mj0iMTEiIHkyPSIxNCIvPjxsaW5lIHgxPSI4IiB5MT0iMTEiIHgyPSIxNCIgeTI9IjExIi8+PC9zdmc+PC9kaXY+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItYmFkZ2UiPkRpc3BvbmlibGU8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItY291bnQiPiYjMTI4MjQ3OyAzIHBob3Rvczwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItdGh1bWJzIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRG9kZ2UlMjBEdXJhbmdvLzIwMjYwMzI5XzEwMDA1MTAwMF9pT1MuanBnIiBjbGFzcz0iYi10aHVtYiBhY3RpdmUiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRG9kZ2UlMjBEdXJhbmdvLzIwMjYwMzI5XzEwMDA1MjAwMF9pT1MlMjAxLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRG9kZ2UlMjBEdXJhbmdvLzIwMjYwMzI5XzEwMDA1MjAwMF9pT1MlMjAyLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItY2FyZC1ib2R5Ij4KICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYi1jYXRlZ29yeSI+U1VWIEFtJmVhY3V0ZTtyaWNhaW48L3NwYW4+CiAgICAgICAgICAgICAgPGgzIGNsYXNzPSJiLW5hbWUiPkRvZGdlIER1cmFuZ28gNS43IEhFTUk8L2gzPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItZXF1aXAiPjggY3lsaW5kcmVzICZtaWRkb3Q7IFRyYWN0aW9uIGludCZlYWN1dGU7Z3JhbGU8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLW1ldGEiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItZ3VhcmFudGVlIj4mIzEwMDAzOyBHYXJhbnRpZSA0IGFuczwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLW5vLWFjY2lkZW50Ij4mIzEwMDAzOyBKYW1haXMgYWNjaWRlbnQmZWFjdXRlOzwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWZvb3RlciI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLXByaWNlIj41IDYwMCAmZXVybzs8L2Rpdj4KICAgICAgICAgICAgICAgIDxhIGhyZWY9ImNvbnRhY3QuaHRtbCIgY2xhc3M9ImItYnRuIj5Db250YWN0ZXI8L2E+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPCEtLSBGb3JkIE1vbmRlbyAtLT4KICAgICAgICAgIDxkaXYgY2xhc3M9ImItY2FyZCBmYWRlLXVwIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1jYXJkLWltZyI+CiAgICAgICAgICAgICAgPGltZyBjbGFzcz0iYi1tYWluLWltZyIgc3JjPSJGb3JkJTIwTW9uZGVvLzIwMjYwMzI5XzE2MjIyNjAwMF9pT1MuanBnIiBhbHQ9IkZvcmQgTW9uZGVvIDEuNiBURENpIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLXpvb20taWNvbiI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjUiPjxjaXJjbGUgY3g9IjExIiBjeT0iMTEiIHI9IjgiLz48bGluZSB4MT0iMjEiIHkxPSIyMSIgeDI9IjE2LjY1IiB5Mj0iMTYuNjUiLz48bGluZSB4MT0iMTEiIHkxPSI4IiB4Mj0iMTEiIHkyPSIxNCIvPjxsaW5lIHgxPSI4IiB5MT0iMTEiIHgyPSIxNCIgeTI9IjExIi8+PC9zdmc+PC9kaXY+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItYmFkZ2UiPkRpc3BvbmlibGU8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItY291bnQiPiYjMTI4MjQ3OyAyMiBwaG90b3M8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLXRodW1icyI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBNb25kZW8vMjAyNjAzMjlfMTYyMjI2MDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIGFjdGl2ZSIgYWx0PSIiPgogICAgICAgICAgICAgIDxpbWcgc3JjPSJGb3JkJTIwTW9uZGVvLzIwMjYwMzI5XzE2MjIyNzAwMF9pT1MlMjAxLmpwZyIgY2xhc3M9ImItdGh1bWIiIGFsdD0iIj4KICAgICAgICAgICAgICA8aW1nIHNyYz0iRm9yZCUyME1vbmRlby8yMDI2MDMyOV8xNjIyMjcwMDBfaU9TJTIwMi5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBNb25kZW8vMjAyNjAzMjlfMTYyMjI4MDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBNb25kZW8vMjAyNjAzMjlfMTYyMjI5MDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgICAgPGltZyBzcmM9IkZvcmQlMjBNb25kZW8vMjAyNjAzMjlfMTYyMjMyMDAwX2lPUy5qcGciIGNsYXNzPSJiLXRodW1iIiBhbHQ9IiI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQtYm9keSI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItY2F0ZWdvcnkiPkJlcmxpbmU8L3NwYW4+CiAgICAgICAgICAgICAgPGgzIGNsYXNzPSJiLW5hbWUiPkZvcmQgTW9uZGVvIDEuNiBURENpPC9oMz4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWVxdWlwIj5DcnVpc2UgJm1pZGRvdDsgQXR0ZWxhZ2UgJm1pZGRvdDsgSVNPLUZJWCAmbWlkZG90OyBEQUIrPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1tZXRhIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWd1YXJhbnRlZSI+JiMxMDAwMzsgR2FyYW50aWUgNCBhbnM8L3NwYW4+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYi1uby1hY2NpZGVudCI+JiMxMDAwMzsgSmFtYWlzIGFjY2lkZW50JmVhY3V0ZTs8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1mb290ZXIiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1wcmljZSI+NCAwMDAgJmV1cm87PC9kaXY+CiAgICAgICAgICAgICAgICA8YSBocmVmPSJjb250YWN0Lmh0bWwiIGNsYXNzPSJiLWJ0biI+Q29udGFjdGVyPC9hPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDwhLS0gRm9yZCBNdXN0YW5nIChwaG90b3Mgw6AgdXBsb2FkZXIpIC0tPgogICAgICAgICAgPGRpdiBjbGFzcz0iYi1jYXJkIGZhZGUtdXAiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJiLWNhcmQtaW1nIGItY2FyZC1pbWctLXBlbmRpbmciPgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItaW1nLXBsYWNlaG9sZGVyIj4KICAgICAgICAgICAgICAgIDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41Ij48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIyIi8+PGNpcmNsZSBjeD0iOC41IiBjeT0iOC41IiByPSIxLjUiLz48cG9seWxpbmUgcG9pbnRzPSIyMSAxNSAxNiAxMCA1IDIxIi8+PC9zdmc+CiAgICAgICAgICAgICAgICA8c3Bhbj5QaG90b3Mgw6AgdmVuaXI8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItYmFkZ2UgYi1iYWRnZS1uZXciPkV4Y2x1c2lmPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1jYXJkLWJvZHkiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJiLWNhdGVnb3J5Ij5NdXNjbGUgQ2FyICZidWxsOyBDYWJyaW9sZXQ8L3NwYW4+CiAgICAgICAgICAgICAgPGgzIGNsYXNzPSJiLW5hbWUiPkZvcmQgTXVzdGFuZyBTaGVsYnkgR1Q1MDAgU1ZUIDUuNDwvaDM+CiAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYi1lcXVpcCI+Q2FicmlvbGV0ICZtaWRkb3Q7ICZFYWN1dGU7Y2hhcHBlbWVudCBDb3JzYTwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItbWV0YSI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0iYi1ndWFyYW50ZWUiPiYjMTAwMDM7IEdhcmFudGllIDQgYW5zPC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImItbm8tYWNjaWRlbnQiPiYjMTAwMDM7IEphbWFpcyBhY2NpZGVudCZlYWN1dGU7PC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItZm9vdGVyIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImItcHJpY2UiPjE3IDAwMCAmZXVybzs8L2Rpdj4KICAgICAgICAgICAgICAgIDxhIGhyZWY9ImNvbnRhY3QuaHRtbCIgY2xhc3M9ImItYnRuIj5Db250YWN0ZXI8L2E+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgIDwvZGl2PgoKICAgICAgICA8IS0tIFBhZ2luYXRpb24gLS0+CiAgICAgICAgPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyOyBnYXA6OHB4OyBtYXJnaW4tdG9wOjQ4cHg7Ij4KICAgICAgICAgIDxidXR0b24gc3R5bGU9IndpZHRoOjQwcHg7IGhlaWdodDo0MHB4OyBiYWNrZ3JvdW5kOnZhcigtLWFjY2VudCk7IGNvbG9yOiMwMDA7IGJvcmRlcjpub25lOyBib3JkZXItcmFkaXVzOjhweDsgZm9udC1mYW1pbHk6J01vbnRzZXJyYXQnLHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OjcwMDsgY3Vyc29yOnBvaW50ZXI7Ij4xPC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uIHN0eWxlPSJ3aWR0aDo0MHB4OyBoZWlnaHQ6NDBweDsgYmFja2dyb3VuZDp2YXIoLS1jYXJkLWJnKTsgY29sb3I6dmFyKC0tdGV4dC1tdXRlZCk7IGJvcmRlcjoxcHggc29saWQgdmFyKC0tYm9yZGVyKTsgYm9yZGVyLXJhZGl1czo4cHg7IGZvbnQtZmFtaWx5OidNb250c2VycmF0JyxzYW5zLXNlcmlmOyBmb250LXdlaWdodDo3MDA7IGN1cnNvcjpwb2ludGVyOyB0cmFuc2l0aW9uOmFsbCAwLjNzOyI+MjwvYnV0dG9uPgogICAgICAgICAgPGJ1dHRvbiBzdHlsZT0id2lkdGg6NDBweDsgaGVpZ2h0OjQwcHg7IGJhY2tncm91bmQ6dmFyKC0tY2FyZC1iZyk7IGNvbG9yOnZhcigtLXRleHQtbXV0ZWQpOyBib3JkZXI6MXB4IHNvbGlkIHZhcigtLWJvcmRlcik7IGJvcmRlci1yYWRpdXM6OHB4OyBmb250LWZhbWlseTonTW9udHNlcnJhdCcsc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6NzAwOyBjdXJzb3I6cG9pbnRlcjsgdHJhbnNpdGlvbjphbGwgMC4zczsiPjM8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24gc3R5bGU9IndpZHRoOjQwcHg7IGhlaWdodDo0MHB4OyBiYWNrZ3JvdW5kOnZhcigtLWNhcmQtYmcpOyBjb2xvcjp2YXIoLS10ZXh0LW11dGVkKTsgYm9yZGVyOjFweCBzb2xpZCB2YXIoLS1ib3JkZXIpOyBib3JkZXItcmFkaXVzOjhweDsgZm9udC1mYW1pbHk6J01vbnRzZXJyYXQnLHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OjcwMDsgY3Vyc29yOnBvaW50ZXI7IHRyYW5zaXRpb246YWxsIDAuM3M7Ij7igLo8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L2Rpdj4KCiAgPCEtLSA9PT09PT0gRk9PVEVSID09PT09PSAtLT4KICA8Zm9vdGVyIGNsYXNzPSJmb290ZXIiPgogICAgPGRpdiBjbGFzcz0iZm9vdGVyLWlubmVyIj4KICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyLXRvcCI+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyLWJyYW5kIj4KICAgICAgICAgIDxhIGhyZWY9ImluZGV4Lmh0bWwiIGNsYXNzPSJsb2dvIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0ibG9nby1pY29uIj5BSDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJsb2dvLXRleHQiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJsb2dvLW1haW4iPkF1dG9oYXVzPC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJsb2dvLXN1YiI+VmVudGUgJiBFeHBvcnQ8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9hPgogICAgICAgICAgPHA+Vm90cmUgc3DDqWNpYWxpc3RlIGRlIGxhIHZlbnRlIGV0IGRlIGwnZXhwb3J0IGRlIHbDqWhpY3VsZXMuIExpdnJhaXNvbiBzw6ljdXJpc8OpZSBwYXJ0b3V0IGVuIEZyYW5jZSBldCDDoCBsJ2ludGVybmF0aW9uYWwuIEdhcmFudGllIHNhdGlzZmFpdCBvdSByZW1ib3Vyc8OpIDE0IGpvdXJzLjwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wiPgogICAgICAgICAgPGg0Pk5hdmlnYXRpb248L2g0PgogICAgICAgICAgPHVsIGNsYXNzPSJmb290ZXItbGlua3MiPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iaW5kZXguaHRtbCI+QWNjdWVpbDwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iYm91dGlxdWUuaHRtbCI+Tm9zIFbDqWhpY3VsZXM8L2E+PC9saT4KICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNvbmRpdGlvbnMuaHRtbCI+Q29uZGl0aW9ucyBkJ0V4cG9ydDwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iY29udGFjdC5odG1sIj5Db250YWN0PC9hPjwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wiPgogICAgICAgICAgPGg0PlNlcnZpY2VzPC9oND4KICAgICAgICAgIDx1bCBjbGFzcz0iZm9vdGVyLWxpbmtzIj4KICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiMiPkxpdnJhaXNvbiBGcmFuY2U8L2E+PC9saT4KICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiMiPkV4cG9ydCBET00tVE9NPC9hPjwvbGk+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIjIj5FeHBvcnQgSW50ZXJuYXRpb25hbDwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0iIyI+R2FyYW50aWUgMTQgam91cnM8L2E+PC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyLWNvbCI+CiAgICAgICAgICA8aDQ+Q29udGFjdDwvaDQ+CiAgICAgICAgICA8dWwgY2xhc3M9ImZvb3Rlci1saW5rcyI+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSJ0ZWw6KzMzNzU2ODQxMjk1Ij4rMzMgNyA1NiA4NCAxMiA5NTwvYT48L2xpPgogICAgICAgICAgICA8bGk+PGEgaHJlZj0ibWFpbHRvOmhlcnpvZ2dtYmhhdXRvaGF1c0BnbWFpbC5jb20iPmhlcnpvZ2dtYmhhdXRvaGF1c0BnbWFpbC5jb208L2E+PC9saT4KICAgICAgICAgICAgPGxpPjxhIGhyZWY9IiMiPkRpc3BvbmlibGUgN2ovNzwvYT48L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1ib3R0b20iPgogICAgICAgIDxwPsKpIDIwMjYgQXV0b2hhdXMuIFRvdXMgZHJvaXRzIHLDqXNlcnbDqXMuPC9wPgogICAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1ib3R0b20tbGlua3MiPgogICAgICAgICAgPGEgaHJlZj0iIyI+TWVudGlvbnMgbMOpZ2FsZXM8L2E+CiAgICAgICAgICA8YSBocmVmPSIjIj5Qb2xpdGlxdWUgZGUgY29uZmlkZW50aWFsaXTDqTwvYT4KICAgICAgICAgIDxhIGhyZWY9IiMiPkNHVjwvYT4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L2Zvb3Rlcj4KCiAgPGJ1dHRvbiBjbGFzcz0ic2Nyb2xsLXRvcCIgaWQ9InNjcm9sbFRvcCIgYXJpYS1sYWJlbD0iUmV0b3VyIGVuIGhhdXQiPgogICAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSIvPjwvc3ZnPgogIDwvYnV0dG9uPgoKICA8IS0tIExpZ2h0Ym94IC0tPgogIDxkaXYgY2xhc3M9ImxpZ2h0Ym94IiBpZD0ibGlnaHRib3giIHJvbGU9ImRpYWxvZyIgYXJpYS1tb2RhbD0idHJ1ZSIgYXJpYS1sYWJlbD0iVmlzaW9ubmV1c2UgcGhvdG9zIj4KICAgIDxidXR0b24gY2xhc3M9ImxiLWNsb3NlIiBpZD0ibGJDbG9zZSIgYXJpYS1sYWJlbD0iRmVybWVyIj4mIzEwMDA1OzwvYnV0dG9uPgogICAgPGJ1dHRvbiBjbGFzcz0ibGItcHJldiIgaWQ9ImxiUHJldiIgYXJpYS1sYWJlbD0iUGhvdG8gcHImZWFjdXRlO2MmZWFjdXRlO2RlbnRlIj4mIzgyNDk7PC9idXR0b24+CiAgICA8YnV0dG9uIGNsYXNzPSJsYi1uZXh0IiBpZD0ibGJOZXh0IiBhcmlhLWxhYmVsPSJQaG90byBzdWl2YW50ZSI+JiM4MjUwOzwvYnV0dG9uPgogICAgPGRpdiBjbGFzcz0ibGItaW1nLXdyYXAiIGlkPSJsYkltZ1dyYXAiPgogICAgICA8aW1nIGNsYXNzPSJsYi1pbWciIGlkPSJsYkltZyIgc3JjPSIiIGFsdD0iIj4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ibGItY291bnRlciIgaWQ9ImxiQ291bnRlciI+PC9kaXY+CiAgPC9kaXY+CgogIDxzY3JpcHQgc3JjPSJqcy9tYWluLmpzIj48L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Autohaus Boutique – Parcourez notre sélection de +500 véhicules premium. BMW, Mercedes, Audi, Tesla et bien plus. Livraison en France 5-7 jours." />
+  <title>Boutique – Autohaus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c9a84c'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Montserrat,sans-serif' font-weight='900' font-size='14' fill='%23000'>AH</text></svg>"/>
+  <style>
+    .boutique-content { background: #ffffff; }
+
+    /* ── Card image: landscape ratio + zoom cursor ── */
+    .b-card-img {
+      position: relative;
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      cursor: zoom-in;
+    }
+    .b-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .b-card:hover .b-card-img img { transform: scale(1.04); }
+
+    /* ── Zoom icon overlay ── */
+    .b-zoom-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0);
+      transition: background 0.25s;
+      pointer-events: none;
+      color: #fff;
+      opacity: 0;
+    }
+    .b-card-img:hover .b-zoom-icon { background: rgba(0,0,0,0.28); opacity: 1; }
+
+    /* ── Lightbox ── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.93);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lb-img-wrap { max-width: 90vw; max-height: 85vh; display: flex; align-items: center; justify-content: center; }
+    .lb-img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 4px; display: block; box-shadow: 0 8px 60px rgba(0,0,0,0.6); }
+    .lb-close {
+      position: fixed; top: 18px; right: 24px;
+      background: rgba(255,255,255,0.12); border: none; color: #fff;
+      font-size: 1.6rem; width: 44px; height: 44px; border-radius: 50%;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; z-index: 3001;
+    }
+    .lb-close:hover { background: rgba(255,255,255,0.25); }
+    .lb-prev, .lb-next {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.12); border: none; color: #fff;
+      font-size: 2.8rem; width: 52px; height: 52px; border-radius: 50%;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; z-index: 3001; line-height: 1;
+    }
+    .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.25); }
+    .lb-prev { left: 20px; }
+    .lb-next { right: 20px; }
+    .lb-counter {
+      position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6); font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem; letter-spacing: 0.12em; font-weight: 600; pointer-events: none;
+    }
+    @media (max-width: 600px) {
+      .lb-prev { left: 8px; } .lb-next { right: 8px; }
+      .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header scrolled" id="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AH</div>
+        <div class="logo-text">
+          <span class="logo-main">Autohaus</span>
+          <span class="logo-sub">Vente &amp; Export</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html" class="active">Nos Véhicules</a></li>
+        <li><a href="conditions.html">Conditions d'Export</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <div class="nav-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+          +33 7 56 84 12 95
+        </div>
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Nos Véhicules</a>
+    <a href="conditions.html">Conditions d'Export</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+33756841295" class="btn btn-primary">Appeler maintenant</a>
+  </nav>
+
+  <!-- ====== PAGE HERO ====== -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>Nos Véhicules</span>
+      </div>
+      <h1 class="page-title">Notre <span style="color:var(--accent)">Boutique</span></h1>
+    </div>
+  </div>
+
+  <!-- ====== BOUTIQUE CONTENT ====== -->
+  <div class="boutique-content">
+    <div class="boutique-layout">
+
+      <!-- Sidebar Filters -->
+      <aside class="filters-sidebar">
+        <div class="filter-panel">
+          <h4>Marque</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes les marques</label>
+            <label class="filter-checkbox"><input type="checkbox"> BMW</label>
+            <label class="filter-checkbox"><input type="checkbox"> Mercedes-Benz</label>
+            <label class="filter-checkbox"><input type="checkbox"> Audi</label>
+            <label class="filter-checkbox"><input type="checkbox"> Volkswagen</label>
+            <label class="filter-checkbox"><input type="checkbox"> Renault</label>
+            <label class="filter-checkbox"><input type="checkbox"> Peugeot</label>
+            <label class="filter-checkbox"><input type="checkbox"> Tesla</label>
+            <label class="filter-checkbox"><input type="checkbox"> Porsche</label>
+            <label class="filter-checkbox"><input type="checkbox"> Toyota</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Budget</h4>
+          <div class="price-range">
+            <div class="price-inputs">
+              <input type="number" placeholder="Min €" min="0">
+              <input type="number" placeholder="Max €" max="200000">
+            </div>
+            <button class="btn btn-primary" style="width:100%; justify-content:center; padding:10px;">Appliquer</button>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Carburant</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Tous</label>
+            <label class="filter-checkbox"><input type="checkbox"> Essence</label>
+            <label class="filter-checkbox"><input type="checkbox"> Diesel</label>
+            <label class="filter-checkbox"><input type="checkbox"> Électrique</label>
+            <label class="filter-checkbox"><input type="checkbox"> Hybride</label>
+            <label class="filter-checkbox"><input type="checkbox"> GPL</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Année</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2024 - 2026</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2021 - 2023</label>
+            <label class="filter-checkbox"><input type="checkbox"> 2018 - 2020</label>
+            <label class="filter-checkbox"><input type="checkbox"> Avant 2018</label>
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <h4>Transmission</h4>
+          <div class="filter-options">
+            <label class="filter-checkbox"><input type="checkbox" checked> Toutes</label>
+            <label class="filter-checkbox"><input type="checkbox"> Automatique</label>
+            <label class="filter-checkbox"><input type="checkbox"> Manuelle</label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Vehicle Grid -->
+      <div>
+        <div class="boutique-header">
+          <span class="results-count"><span>5</span> véhicules trouvés</span>
+          <select class="sort-select">
+            <option>Trier par : Prix croissant</option>
+            <option>Prix décroissant</option>
+            <option>Plus récent</option>
+            <option>Kilométrage croissant</option>
+          </select>
+        </div>
+
+        <div class="boutique-grid">
+
+          <!-- Ford Kuga -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img class="b-main-img" src="Ford%20Kuga/20260329_121715000_iOS%203.jpg" alt="Ford Kuga 2.0 TDCi">
+              <div class="b-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+              <span class="b-badge">Disponible</span>
+              <span class="b-count">&#128247; 24 photos</span>
+            </div>
+            <div class="b-thumbs">
+              <img src="Ford%20Kuga/20260329_121715000_iOS%203.jpg" class="b-thumb active" alt="">
+              <img src="Ford%20Kuga/20260329_121715000_iOS%204.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Kuga/20260329_121715000_iOS.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Kuga/20260329_121716000_iOS%201.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Kuga/20260329_122946000_iOS%201.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Kuga/20260329_122947000_iOS.jpg" class="b-thumb" alt="">
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV</span>
+              <h3 class="b-name">Ford Kuga 2.0 TDCi</h3>
+              <div class="b-equip">Cruise &middot; DAB &middot; Attelage &middot; Cuir &middot; Keyless</div>
+              <div class="b-meta">
+                <span class="b-guarantee">&#10003; Garantie 4 ans</span>
+                <span class="b-no-accident">&#10003; Jamais accident&eacute;</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">3 500 &euro;</div>
+                <a href="contact.html" class="b-btn">Contacter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford Explorer -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img class="b-main-img" src="Ford%20Explorer/20260329_121704000_iOS%201.jpg" alt="Ford Explorer 3.0 AWD ST-Line">
+              <div class="b-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+              <span class="b-badge b-badge-new">Nouveau</span>
+              <span class="b-count">&#128247; 26 photos</span>
+            </div>
+            <div class="b-thumbs">
+              <img src="Ford%20Explorer/20260329_121704000_iOS%201.jpg" class="b-thumb active" alt="">
+              <img src="Ford%20Explorer/20260329_121704000_iOS%202.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Explorer/20260329_121704000_iOS.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Explorer/20260329_121705000_iOS%201.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Explorer/20260329_121707000_iOS.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Explorer/20260329_121712000_iOS.jpg" class="b-thumb" alt="">
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV Hybride &bull; 7 places</span>
+              <h3 class="b-name">Ford Explorer 3.0 AWD ST-Line</h3>
+              <div class="b-equip">7 places &middot; Navigation &middot; Cuir &middot; ACC &middot; S-Line</div>
+              <div class="b-meta">
+                <span class="b-guarantee">&#10003; Garantie 4 ans</span>
+                <span class="b-no-accident">&#10003; Jamais accident&eacute;</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">7 000 &euro;</div>
+                <a href="contact.html" class="b-btn">Contacter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dodge Durango -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img class="b-main-img" src="Dodge%20Durango/20260329_100051000_iOS.jpg" alt="Dodge Durango 5.7 HEMI">
+              <div class="b-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+              <span class="b-badge">Disponible</span>
+              <span class="b-count">&#128247; 3 photos</span>
+            </div>
+            <div class="b-thumbs">
+              <img src="Dodge%20Durango/20260329_100051000_iOS.jpg" class="b-thumb active" alt="">
+              <img src="Dodge%20Durango/20260329_100052000_iOS%201.jpg" class="b-thumb" alt="">
+              <img src="Dodge%20Durango/20260329_100052000_iOS%202.jpg" class="b-thumb" alt="">
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">SUV Am&eacute;ricain</span>
+              <h3 class="b-name">Dodge Durango 5.7 HEMI</h3>
+              <div class="b-equip">8 cylindres &middot; Traction int&eacute;grale</div>
+              <div class="b-meta">
+                <span class="b-guarantee">&#10003; Garantie 4 ans</span>
+                <span class="b-no-accident">&#10003; Jamais accident&eacute;</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">5 600 &euro;</div>
+                <a href="contact.html" class="b-btn">Contacter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford Mondeo -->
+          <div class="b-card fade-up">
+            <div class="b-card-img">
+              <img class="b-main-img" src="Ford%20Mondeo/20260329_162226000_iOS.jpg" alt="Ford Mondeo 1.6 TDCi">
+              <div class="b-zoom-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+              <span class="b-badge">Disponible</span>
+              <span class="b-count">&#128247; 22 photos</span>
+            </div>
+            <div class="b-thumbs">
+              <img src="Ford%20Mondeo/20260329_162226000_iOS.jpg" class="b-thumb active" alt="">
+              <img src="Ford%20Mondeo/20260329_162227000_iOS%201.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Mondeo/20260329_162227000_iOS%202.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Mondeo/20260329_162228000_iOS.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Mondeo/20260329_162229000_iOS.jpg" class="b-thumb" alt="">
+              <img src="Ford%20Mondeo/20260329_162232000_iOS.jpg" class="b-thumb" alt="">
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">Berline</span>
+              <h3 class="b-name">Ford Mondeo 1.6 TDCi</h3>
+              <div class="b-equip">Cruise &middot; Attelage &middot; ISO-FIX &middot; DAB+</div>
+              <div class="b-meta">
+                <span class="b-guarantee">&#10003; Garantie 4 ans</span>
+                <span class="b-no-accident">&#10003; Jamais accident&eacute;</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">4 000 &euro;</div>
+                <a href="contact.html" class="b-btn">Contacter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford Mustang (photos à uploader) -->
+          <div class="b-card fade-up">
+            <div class="b-card-img b-card-img--pending">
+              <div class="b-img-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Photos à venir</span>
+              </div>
+              <span class="b-badge b-badge-new">Exclusif</span>
+            </div>
+            <div class="b-card-body">
+              <span class="b-category">Muscle Car &bull; Cabriolet</span>
+              <h3 class="b-name">Ford Mustang Shelby GT500 SVT 5.4</h3>
+              <div class="b-equip">Cabriolet &middot; &Eacute;chappement Corsa</div>
+              <div class="b-meta">
+                <span class="b-guarantee">&#10003; Garantie 4 ans</span>
+                <span class="b-no-accident">&#10003; Jamais accident&eacute;</span>
+              </div>
+              <div class="b-footer">
+                <div class="b-price">17 000 &euro;</div>
+                <a href="contact.html" class="b-btn">Contacter</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex; justify-content:center; gap:8px; margin-top:48px;">
+          <button style="width:40px; height:40px; background:var(--accent); color:#000; border:none; border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer;">1</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">2</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">3</button>
+          <button style="width:40px; height:40px; background:var(--card-bg); color:var(--text-muted); border:1px solid var(--border); border-radius:8px; font-family:'Montserrat',sans-serif; font-weight:700; cursor:pointer; transition:all 0.3s;">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">AH</div>
+            <div class="logo-text">
+              <span class="logo-main">Autohaus</span>
+              <span class="logo-sub">Vente &amp; Export</span>
+            </div>
+          </a>
+          <p>Votre spécialiste de la vente et de l'export de véhicules. Livraison sécurisée partout en France et à l'international. Garantie satisfait ou remboursé 14 jours.</p>
+          </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Nos Véhicules</a></li>
+            <li><a href="conditions.html">Conditions d'Export</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Livraison France</a></li>
+            <li><a href="#">Export DOM-TOM</a></li>
+            <li><a href="#">Export International</a></li>
+            <li><a href="#">Garantie 14 jours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+33756841295">+33 7 56 84 12 95</a></li>
+            <li><a href="mailto:herzoggmbhautohaus@gmail.com">herzoggmbhautohaus@gmail.com</a></li>
+            <li><a href="#">Disponible 7j/7</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Autohaus. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse photos">
+    <button class="lb-close" id="lbClose" aria-label="Fermer">&#10005;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Photo précédente">&#8249;</button>
+    <button class="lb-next" id="lbNext" aria-label="Photo suivante">&#8250;</button>
+    <div class="lb-img-wrap" id="lbImgWrap">
+      <img class="lb-img" id="lbImg" src="" alt="">
+    </div>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
