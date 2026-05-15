@@ -291,7 +291,7 @@
       <!-- ── Ford Kuga ── -->
       <div class="g-card" onclick="location.href='ford-kuga.html'" style="cursor:pointer">
         <div class="g-img">
-          <img class="b-main-img" src="Ford%20Kuga/20260329_121715000_iOS.jpg" alt="Ford Kuga 2.0 TDCi">
+          <img class="b-main-img" src="Ford%20Kuga/20260329_161751000_iOS.jpg" alt="Ford Kuga 2.0 TDCi">
           <div class="g-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
           <span class="g-badge">Disponible</span>
           <span class="g-count">&#128247; 24 photos</span>
@@ -326,7 +326,7 @@
           <span class="g-category">SUV &bull; Diesel &bull; Manuelle</span>
           <h3 class="g-name">Ford Kuga 2.0 TDCi</h3>
           <div class="g-price">3 500,00 &euro;</div>
-          <a href="ford-kuga.html" class="g-btn">Voir la fiche</a>
+          <a href="ford-kuga.html" class="g-btn">VOIR LA FICHE</a>
         </div>
       </div>
 
@@ -367,20 +367,19 @@
           <span class="g-category">SUV Hybride &bull; 7 places &bull; Automatique</span>
           <h3 class="g-name">Ford Explorer 3.0 AWD ST-Line</h3>
           <div class="g-price">7 000,00 &euro;</div>
-          <a href="ford-explorer.html" class="g-btn">Voir la fiche</a>
+          <a href="ford-explorer.html" class="g-btn">VOIR LA FICHE</a>
         </div>
       </div>
 
       <!-- ── Dodge Durango ── -->
       <div class="g-card" onclick="location.href='dodge-durango.html'" style="cursor:pointer">
         <div class="g-img">
-          <img class="b-main-img" src="Dodge%20Durango/20260329_100051000_iOS.jpg" alt="Dodge Durango 5.7 HEMI">
+          <img class="b-main-img" src="Dodge%20Durango/20260329_100052000_iOS%201.jpg" alt="Dodge Durango 5.7 HEMI">
           <div class="g-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
           <span class="g-badge">Disponible</span>
-          <span class="g-count">&#128247; 3 photos</span>
+          <span class="g-count">&#128247; 2 photos</span>
         </div>
         <div class="g-pool">
-          <img class="b-thumb" src="Dodge%20Durango/20260329_100051000_iOS.jpg" alt="">
           <img class="b-thumb" src="Dodge%20Durango/20260329_100052000_iOS%201.jpg" alt="">
           <img class="b-thumb" src="Dodge%20Durango/20260329_100052000_iOS%202.jpg" alt="">
         </div>
@@ -388,7 +387,7 @@
           <span class="g-category">SUV Am&eacute;ricain &bull; Essence &bull; Automatique</span>
           <h3 class="g-name">Dodge Durango 5.7 HEMI</h3>
           <div class="g-price">5 600,00 &euro;</div>
-          <a href="dodge-durango.html" class="g-btn">Voir la fiche</a>
+          <a href="dodge-durango.html" class="g-btn">VOIR LA FICHE</a>
         </div>
       </div>
 
@@ -428,7 +427,7 @@
           <span class="g-category">Berline &bull; Diesel &bull; Manuelle</span>
           <h3 class="g-name">Ford Mondeo 1.6 TDCi</h3>
           <div class="g-price">4 000,00 &euro;</div>
-          <a href="ford-mondeo.html" class="g-btn">Voir la fiche</a>
+          <a href="ford-mondeo.html" class="g-btn">VOIR LA FICHE</a>
         </div>
       </div>
 
@@ -442,8 +441,8 @@
         <div class="g-body">
           <span class="g-category">Muscle Car &bull; Cabriolet &bull; Manuelle</span>
           <h3 class="g-name">Ford Mustang Shelby GT500 SVT 5.4</h3>
-          <div class="g-price">17 000,00 &euro;</div>
-          <a href="ford-mustang.html" class="g-btn">Voir la fiche</a>
+          <div class="g-price">6 000,00 &euro;</div>
+          <a href="ford-mustang.html" class="g-btn">VOIR LA FICHE</a>
         </div>
       </div>
 
@@ -560,22 +559,7 @@
         if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbPhotos.length; lbShow(); }
       });
 
-      document.querySelectorAll('.g-card').forEach(card => {
-        const mainImg = card.querySelector('.b-main-img');
-        const thumbs  = card.querySelectorAll('.b-thumb');
-        const imgArea = card.querySelector('.g-img');
-        if (!mainImg || !imgArea) return;
-
-        const photos = thumbs.length
-          ? Array.from(thumbs).map(t => t.src)
-          : [mainImg.src];
-
-        imgArea.addEventListener('click', () => {
-          const cur = mainImg.src;
-          const idx = photos.findIndex(p => p.split('/').pop() === cur.split('/').pop());
-          lbOpen(photos, Math.max(0, idx));
-        });
-      });
+      /* Cards navigate via onclick — no lightbox on gallery cards */
     });
   </script>
 </body>
