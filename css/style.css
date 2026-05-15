@@ -2079,7 +2079,7 @@ h1, h2, h3, h4, h5 {
    VEHICLE DETAIL PAGE
    ============================================================ */
 
-.vd-page { background: #fff; color: #0d1b3e; }
+.vd-page { background: #fff; color: #1a2744; }
 
 .vd-container {
   max-width: 1280px;
@@ -2096,9 +2096,9 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   gap: 6px;
 }
-.vd-breadcrumb a { color: #1d4ed8; }
+.vd-breadcrumb a { color: #1e50d3; }
 .vd-breadcrumb a:hover { text-decoration: underline; }
-.vd-breadcrumb strong { color: #0d1b3e; font-weight: 600; }
+.vd-breadcrumb strong { color: #1a2744; font-weight: 600; }
 
 /* Hero grid */
 .vd-hero {
@@ -2127,9 +2127,9 @@ h1, h2, h3, h4, h5 {
 
 .vd-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
   font-weight: 900;
-  color: #0d1b3e;
+  color: #1a2744;
   line-height: 1.2;
   margin-bottom: 28px;
 }
@@ -2140,7 +2140,21 @@ h1, h2, h3, h4, h5 {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 100%;
+  border-collapse: collapse;
 }
+.vd-specs th,
+.vd-specs td {
+  padding: 11px 18px;
+  border-bottom: 1px solid #e5e9f0;
+  font-size: 0.845rem;
+  text-align: left;
+}
+.vd-specs tbody tr:last-child th,
+.vd-specs tbody tr:last-child td { border-bottom: none; }
+.vd-specs tbody tr:nth-child(even) { background: #f8f9fb; }
+.vd-specs th { color: #7a8cad; font-weight: 500; width: 45%; }
+.vd-specs td { color: #1a2744; font-weight: 700; }
 .vd-spec-row {
   display: flex;
   align-items: center;
@@ -2152,10 +2166,10 @@ h1, h2, h3, h4, h5 {
 .vd-spec-row:last-child { border-bottom: none; }
 .vd-spec-row:nth-child(even) { background: #f8f9fb; }
 .vd-spec-label { color: #7a8cad; font-weight: 500; }
-.vd-spec-value { color: #0d1b3e; font-weight: 700; }
+.vd-spec-value { color: #1a2744; font-weight: 700; }
 
 /* Equipment */
-.vd-equip { margin-bottom: 20px; }
+.vd-equip { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 7px; }
 .vd-equip-label {
   font-size: 0.68rem;
   font-weight: 700;
@@ -2170,11 +2184,11 @@ h1, h2, h3, h4, h5 {
   gap: 7px;
 }
 .vd-equip-tag {
-  background: #f0f4ff;
-  border: 1px solid #c8d8ff;
-  color: #1d4ed8;
-  border-radius: 6px;
-  padding: 4px 11px;
+  background: #fff;
+  border: 1.5px solid #1a2744;
+  color: #1a2744;
+  border-radius: 20px;
+  padding: 4px 13px;
   font-size: 0.72rem;
   font-weight: 600;
 }
@@ -2211,9 +2225,9 @@ h1, h2, h3, h4, h5 {
 }
 .vd-price {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 900;
-  color: #0d1b3e;
+  color: #1a2744;
   line-height: 1;
 }
 
@@ -2225,13 +2239,13 @@ h1, h2, h3, h4, h5 {
   gap: 10px;
   width: 100%;
   padding: 15px 20px;
-  background: #1d4ed8;
+  background: #1e50d3;
   color: #fff;
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   transition: background 0.2s;
@@ -2245,9 +2259,9 @@ h1, h2, h3, h4, h5 {
   gap: 10px;
   width: 100%;
   padding: 13px 20px;
-  background: #f0f4ff;
-  color: #1d4ed8;
-  border: 1.5px solid #c5d5ff;
+  background: #fff;
+  color: #1a2744;
+  border: 1.5px solid #1a2744;
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.82rem;
@@ -2255,9 +2269,18 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   transition: all 0.2s;
 }
-.vd-call:hover { background: #dce8ff; color: #1640b8; }
+.vd-call:hover { background: #f0f4ff; color: #1a2744; }
 
 /* ── Right: Photo column ── */
+.vd-main-placeholder {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.vd-main-placeholder:hover img { transform: none; }
 .vd-main-wrap {
   border-radius: 12px;
   overflow: hidden;
@@ -2307,7 +2330,7 @@ h1, h2, h3, h4, h5 {
 }
 .vd-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .vd-thumb:hover { opacity: 0.85; }
-.vd-thumb.active { opacity: 1; outline-color: #1d4ed8; }
+.vd-thumb.active { opacity: 1; outline-color: #1e50d3; }
 
 /* ── Description section ── */
 .vd-desc-section {
@@ -2319,7 +2342,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.35rem;
   font-weight: 800;
-  color: #0d1b3e;
+  color: #1a2744;
   margin-bottom: 28px;
   padding-bottom: 14px;
   border-bottom: 2px solid #e5e9f0;
@@ -2348,7 +2371,7 @@ h1, h2, h3, h4, h5 {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #1d4ed8;
+  background: #1e50d3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -2399,8 +2422,8 @@ h1, h2, h3, h4, h5 {
 }
 .sim-body { padding: 16px 18px 20px; }
 .sim-cat { font-size: 0.67rem; font-weight: 500; color: #9aabcc; text-transform: uppercase; letter-spacing: 0.09em; display: block; margin-bottom: 5px; }
-.sim-name { font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 800; color: #0d1b3e; margin-bottom: 8px; line-height: 1.3; }
-.sim-price { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight: 800; color: #1d4ed8; }
+.sim-name { font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 800; color: #1a2744; margin-bottom: 8px; line-height: 1.3; }
+.sim-price { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight: 800; color: #1e50d3; }
 
 /* Lightbox (vehicle pages) */
 .vd-lightbox {
