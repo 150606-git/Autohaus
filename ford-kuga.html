@@ -6,6 +6,30 @@
   <title>Ford Kuga 2.0 TDCi – Autohaus</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23c9a84c'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Montserrat,sans-serif' font-weight='900' font-size='14' fill='%23000'>AH</text></svg>"/>
+  <style>
+    .vd-page { background: #fff; color: #1a2744; }
+    .vd-title { font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 900; color: #1a2744; }
+    .vd-price { font-size: 2.8rem; font-weight: 900; color: #1a2744; }
+    .vd-cta { background: #1e50d3; color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; }
+    .vd-cta:hover { background: #1640b8; color: #fff; }
+    .vd-call { background: #fff; border: 1.5px solid #1a2744; color: #1a2744; font-weight: 700; }
+    .vd-call:hover { background: #f0f4ff; color: #1a2744; }
+    .vd-equip-tag { border: 1.5px solid #1a2744; color: #1a2744; background: #fff; border-radius: 20px; padding: 4px 13px; font-size: 0.72rem; font-weight: 600; }
+    .vd-g-badge { background: #1a7a45; color: #fff; border: none; border-radius: 20px; padding: 5px 14px; font-size: 0.72rem; font-weight: 700; }
+    .vd-specs { border: 1px solid #e0e4ed; border-radius: 10px; overflow: hidden; margin-bottom: 24px; width: 100%; border-collapse: collapse; }
+    .vd-specs th, .vd-specs td { padding: 11px 18px; font-size: 0.845rem; border-bottom: 1px solid #e0e4ed; text-align: left; }
+    .vd-specs tbody tr:last-child th,
+    .vd-specs tbody tr:last-child td { border-bottom: none; }
+    .vd-specs th { color: #7a8cad; font-weight: 500; width: 45%; }
+    .vd-specs td { color: #1a2744; font-weight: 700; }
+    .vd-cat-badge { background: #e8efff; color: #1e50d3; border-radius: 4px; }
+    .vd-section-title { color: #1a2744; }
+    .vd-cond-dot { background: #1e50d3; }
+    .sim-price { color: #1e50d3; }
+    .vd-thumb.active { outline-color: #1e50d3; }
+    .vd-breadcrumb a { color: #1e50d3; }
+    .vd-breadcrumb span:last-child { color: #1a2744; font-weight: 600; }
+  </style>
 </head>
 <body>
 
@@ -43,234 +67,150 @@
 </nav>
 
 <main>
-  <div class="vd-page">
-    <div class="vd-container">
+<div class="vd-page">
+  <div class="vd-container">
+    <nav class="vd-breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>›</span>
+      <a href="boutique.html">Galerie</a>
+      <span>›</span>
+      <span>Ford Kuga 2.0 TDCi</span>
+    </nav>
 
-      <!-- Breadcrumb -->
-      <nav class="vd-breadcrumb">
-        <a href="index.html">Accueil</a>
-        <span>›</span>
-        <a href="boutique.html">Galerie</a>
-        <span>›</span>
-        <span>Ford Kuga 2.0 TDCi</span>
-      </nav>
+    <div class="vd-hero">
+      <!-- LEFT INFO -->
+      <div class="vd-info">
+        <span class="vd-cat-badge">SUV</span>
+        <h1 class="vd-title">Ford Kuga 2.0 TDCi</h1>
 
-      <!-- Hero -->
-      <div class="vd-hero">
+        <table class="vd-specs">
+          <tbody>
+            <tr><th>Année</th><td>01/2014</td></tr>
+            <tr><th>Kilométrage</th><td>148 000 km</td></tr>
+            <tr><th>Puissance</th><td>140 CH</td></tr>
+            <tr><th>Carburant</th><td>Diesel</td></tr>
+            <tr><th>Boîte</th><td>Manuelle</td></tr>
+          </tbody>
+        </table>
 
-        <!-- LEFT: Info -->
-        <div class="vd-info">
-          <div class="vd-cat-badge">SUV</div>
-          <h1 class="vd-title">Ford Kuga 2.0 TDCi</h1>
-
-          <table class="vd-specs">
-            <tbody>
-              <tr>
-                <th>Année</th>
-                <td>01/2014</td>
-              </tr>
-              <tr>
-                <th>Kilométrage</th>
-                <td>148 000 km</td>
-              </tr>
-              <tr>
-                <th>Puissance</th>
-                <td>140 CH</td>
-              </tr>
-              <tr>
-                <th>Carburant</th>
-                <td>Diesel</td>
-              </tr>
-              <tr>
-                <th>Boîte</th>
-                <td>Manuelle</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="vd-equip">
-            <span class="vd-equip-tag">Cruise Control</span>
-            <span class="vd-equip-tag">DAB</span>
-            <span class="vd-equip-tag">Attelage</span>
-            <span class="vd-equip-tag">Cuir</span>
-            <span class="vd-equip-tag">Keyless</span>
-          </div>
-
-          <div class="vd-guarantees">
-            <span class="vd-guarantee-badge">Garantie 4 ans</span>
-            <span class="vd-guarantee-badge">Jamais accidenté</span>
-          </div>
-
-          <div class="vd-price-block">
-            <span class="vd-price">3 500 €</span>
-          </div>
-
-          <a href="contact.html" class="btn btn-primary vd-cta">Demande De Devis</a>
-          <a href="tel:+33756841295" class="vd-call">+33 7 56 84 12 95</a>
+        <div class="vd-equip">
+          <span class="vd-equip-tag">Cruise Control</span>
+          <span class="vd-equip-tag">DAB</span>
+          <span class="vd-equip-tag">Attelage</span>
+          <span class="vd-equip-tag">Cuir</span>
+          <span class="vd-equip-tag">Keyless</span>
         </div>
 
-        <!-- RIGHT: Photos -->
-        <div class="vd-photo-col">
-          <div class="vd-main-wrap" id="vd-main-wrap">
-            <img
-              id="vd-main-img"
-              src="Ford%20Kuga/20260329_161751000_iOS.jpg"
-              alt="Ford Kuga 2.0 TDCi – photo principale"
-              class="vd-main-img"
-            />
-            <div class="vd-zoom-hint">Cliquer pour agrandir</div>
-          </div>
-          <div class="vd-thumbs">
-            <div class="vd-thumb active" data-src="Ford%20Kuga/20260329_161751000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_161751000_iOS.jpg" alt="Photo 1" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121715000_iOS%204.jpg">
-              <img src="Ford%20Kuga/20260329_121715000_iOS%204.jpg" alt="Photo 2" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121715000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_121715000_iOS.jpg" alt="Photo 3" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121716000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_121716000_iOS%201.jpg" alt="Photo 4" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121716000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_121716000_iOS.jpg" alt="Photo 5" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_122946000_iOS%201.jpg" alt="Photo 6" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS%202.jpg">
-              <img src="Ford%20Kuga/20260329_122946000_iOS%202.jpg" alt="Photo 7" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_122946000_iOS.jpg" alt="Photo 8" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_122947000_iOS%201.jpg" alt="Photo 9" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%202.jpg">
-              <img src="Ford%20Kuga/20260329_122947000_iOS%202.jpg" alt="Photo 10" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%203.jpg">
-              <img src="Ford%20Kuga/20260329_122947000_iOS%203.jpg" alt="Photo 11" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_122947000_iOS.jpg" alt="Photo 12" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_122948000_iOS%201.jpg" alt="Photo 13" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%203.jpg">
-              <img src="Ford%20Kuga/20260329_122948000_iOS%203.jpg" alt="Photo 14" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%204.jpg">
-              <img src="Ford%20Kuga/20260329_122948000_iOS%204.jpg" alt="Photo 15" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_122948000_iOS.jpg" alt="Photo 16" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122949000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_122949000_iOS.jpg" alt="Photo 17" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161749000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_161749000_iOS%201.jpg" alt="Photo 18" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161749000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_161749000_iOS.jpg" alt="Photo 19" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161750000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_161750000_iOS%201.jpg" alt="Photo 20" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161750000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_161750000_iOS.jpg" alt="Photo 21" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161751000_iOS%201.jpg">
-              <img src="Ford%20Kuga/20260329_161751000_iOS%201.jpg" alt="Photo 22" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161751000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_161751000_iOS.jpg" alt="Photo 23" />
-            </div>
-            <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161753000_iOS.jpg">
-              <img src="Ford%20Kuga/20260329_161753000_iOS.jpg" alt="Photo 24" />
-            </div>
-          </div>
+        <div class="vd-guarantees">
+          <span class="vd-g-badge">✓ Garantie 4 ans</span>
+          <span class="vd-g-badge">✓ Jamais accidenté</span>
         </div>
 
+        <div class="vd-price-block">
+          <p class="vd-price-lbl">Prix de vente</p>
+          <div class="vd-price">3 500 €</div>
+        </div>
+
+        <a href="contact.html" class="vd-cta">DEMANDE DE DEVIS</a>
+        <a href="tel:+33756841295" class="vd-call">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+          +33 7 56 84 12 95
+        </a>
       </div>
-      <!-- /vd-hero -->
 
-    </div>
-    <!-- /vd-container -->
-
-    <!-- Description Section -->
-    <div class="vd-desc-section">
-      <div class="vd-container">
-        <div class="vd-desc-cols">
-          <div class="vd-desc-text">
-            <h2>Description</h2>
-            <p>Le Ford Kuga 2.0 TDCi est un SUV polyvalent et élégant, idéal pour les familles actives. Avec sa motorisation diesel économique de 140 chevaux et sa boîte manuelle précise, il offre un équilibre parfait entre performance et consommation maîtrisée. Entretenu avec soin, ce véhicule présente un excellent état général tant mécanique qu'esthétique.</p>
-          </div>
-          <div class="vd-desc-conditions">
-            <h2>Conditions</h2>
-            <ul class="vd-conditions-list">
-              <li>Garantie 4 ans incluse</li>
-              <li>Jamais accidenté</li>
-              <li>Contrôle technique à jour</li>
-              <li>Carnet d'entretien suivi</li>
-              <li>Livraison possible partout en France</li>
-              <li>Export international disponible</li>
-              <li>Paiement sécurisé</li>
-            </ul>
-          </div>
+      <!-- RIGHT PHOTOS -->
+      <div class="vd-photo-col">
+        <div class="vd-main-wrap" id="mainWrap">
+          <img id="vdMainImg" src="Ford%20Kuga/20260329_121715000_iOS.jpg" alt="Ford Kuga 2.0 TDCi">
+          <span class="vd-zoom-hint">Cliquer pour agrandir</span>
+        </div>
+        <div class="vd-thumbs">
+          <div class="vd-thumb active" data-src="Ford%20Kuga/20260329_121715000_iOS.jpg"><img src="Ford%20Kuga/20260329_121715000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121715000_iOS%203.jpg"><img src="Ford%20Kuga/20260329_121715000_iOS%203.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121715000_iOS%204.jpg"><img src="Ford%20Kuga/20260329_121715000_iOS%204.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121716000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_121716000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_121716000_iOS.jpg"><img src="Ford%20Kuga/20260329_121716000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_122946000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS%202.jpg"><img src="Ford%20Kuga/20260329_122946000_iOS%202.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122946000_iOS.jpg"><img src="Ford%20Kuga/20260329_122946000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_122947000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%202.jpg"><img src="Ford%20Kuga/20260329_122947000_iOS%202.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS%203.jpg"><img src="Ford%20Kuga/20260329_122947000_iOS%203.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122947000_iOS.jpg"><img src="Ford%20Kuga/20260329_122947000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_122948000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%203.jpg"><img src="Ford%20Kuga/20260329_122948000_iOS%203.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS%204.jpg"><img src="Ford%20Kuga/20260329_122948000_iOS%204.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122948000_iOS.jpg"><img src="Ford%20Kuga/20260329_122948000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_122949000_iOS.jpg"><img src="Ford%20Kuga/20260329_122949000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161749000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_161749000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161749000_iOS.jpg"><img src="Ford%20Kuga/20260329_161749000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161750000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_161750000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161750000_iOS.jpg"><img src="Ford%20Kuga/20260329_161750000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161751000_iOS%201.jpg"><img src="Ford%20Kuga/20260329_161751000_iOS%201.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161751000_iOS.jpg"><img src="Ford%20Kuga/20260329_161751000_iOS.jpg" alt=""></div>
+          <div class="vd-thumb" data-src="Ford%20Kuga/20260329_161753000_iOS.jpg"><img src="Ford%20Kuga/20260329_161753000_iOS.jpg" alt=""></div>
         </div>
       </div>
     </div>
-
-    <!-- Similar Vehicles Section -->
-    <div class="vd-similar-section">
-      <div class="vd-container">
-        <h2 class="vd-similar-title">Véhicules similaires</h2>
-        <div class="vd-sim-grid">
-
-          <a href="ford-explorer.html" class="sim-card">
-            <div class="sim-img">
-              <img src="Ford%20Explorer/20260329_121704000_iOS%201.jpg" alt="Ford Explorer 3.0 AWD ST-Line" />
-            </div>
-            <div class="sim-body">
-              <span class="sim-cat">SUV Hybride</span>
-              <h3 class="sim-name">Ford Explorer 3.0 AWD ST-Line</h3>
-              <span class="sim-price">7 000 €</span>
-            </div>
-          </a>
-
-          <a href="dodge-durango.html" class="sim-card">
-            <div class="sim-img">
-              <img src="Dodge%20Durango/20260329_100051000_iOS.jpg" alt="Dodge Durango 5.7 HEMI" />
-            </div>
-            <div class="sim-body">
-              <span class="sim-cat">SUV Américain</span>
-              <h3 class="sim-name">Dodge Durango 5.7 HEMI</h3>
-              <span class="sim-price">5 600 €</span>
-            </div>
-          </a>
-
-          <a href="ford-mondeo.html" class="sim-card">
-            <div class="sim-img">
-              <img src="Ford%20Mondeo/20260329_162226000_iOS.jpg" alt="Ford Mondeo 1.6 TDCi" />
-            </div>
-            <div class="sim-body">
-              <span class="sim-cat">Berline</span>
-              <h3 class="sim-name">Ford Mondeo 1.6 TDCi</h3>
-              <span class="sim-price">4 000 €</span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div>
-
   </div>
-  <!-- /vd-page -->
+
+  <!-- Description -->
+  <div class="vd-desc-section">
+    <div class="vd-container">
+      <div class="vd-desc-cols">
+        <div class="vd-desc-text">
+          <h2 class="vd-section-title">Description</h2>
+          <p>Le Ford Kuga 2.0 TDCi est un SUV polyvalent et élégant, idéal pour les familles actives. Avec sa motorisation diesel économique de 140 chevaux et sa boîte manuelle précise, il offre un équilibre parfait entre performance et consommation maîtrisée. Entretenu avec soin, ce véhicule présente un excellent état général tant mécanique qu'esthétique.</p>
+        </div>
+        <div class="vd-desc-conditions">
+          <h2 class="vd-section-title">Conditions de vente</h2>
+          <div class="vd-cond-list">
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Garantie 4 ans incluse</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Jamais accidenté</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Contrôle technique à jour</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Carnet d'entretien suivi</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Livraison possible partout en France</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Export international disponible</span></div>
+            <div class="vd-cond-item"><span class="vd-cond-dot">✓</span><span>Paiement sécurisé</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Similar vehicles -->
+  <div class="vd-similar-section">
+    <div class="vd-container">
+      <h2 class="vd-section-title">Véhicules similaires</h2>
+      <div class="vd-sim-grid">
+        <a href="ford-explorer.html" class="sim-card">
+          <div class="sim-img"><img src="Ford%20Explorer/20260329_121713000_iOS%203.jpg" alt="Ford Explorer 3.0 AWD ST-Line"></div>
+          <div class="sim-body">
+            <span class="sim-cat">SUV Hybride · 7 places</span>
+            <h3 class="sim-name">Ford Explorer 3.0 AWD ST-Line</h3>
+            <span class="sim-price">7 000 €</span>
+          </div>
+        </a>
+        <a href="dodge-durango.html" class="sim-card">
+          <div class="sim-img"><img src="Dodge%20Durango/20260329_100052000_iOS%201.jpg" alt="Dodge Durango 5.7 HEMI"></div>
+          <div class="sim-body">
+            <span class="sim-cat">SUV Américain</span>
+            <h3 class="sim-name">Dodge Durango 5.7 HEMI</h3>
+            <span class="sim-price">5 600 €</span>
+          </div>
+        </a>
+        <a href="ford-mondeo.html" class="sim-card">
+          <div class="sim-img"><img src="Ford%20Mondeo/20260329_162234000_iOS.jpg" alt="Ford Mondeo 1.6 TDCi"></div>
+          <div class="sim-body">
+            <span class="sim-cat">Berline</span>
+            <h3 class="sim-name">Ford Mondeo 1.6 TDCi</h3>
+            <span class="sim-price">4 000 €</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 </main>
 
 <footer class="footer">
@@ -294,127 +234,77 @@
   </div>
 </footer>
 
-<!-- Scroll to top -->
 <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&#8679;</button>
 
 <!-- Lightbox -->
-<div id="vd-lb" class="vd-lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse de photos">
-  <button class="vd-lb-close" id="vd-lb-close" aria-label="Fermer">&times;</button>
-  <button class="vd-lb-prev" id="vd-lb-prev" aria-label="Photo précédente">&#8249;</button>
-  <button class="vd-lb-next" id="vd-lb-next" aria-label="Photo suivante">&#8250;</button>
-  <img id="vd-lb-img" src="" alt="Photo agrandie" />
-  <div class="vd-lb-counter" id="vd-lb-counter"></div>
+<div id="vdLb" class="vd-lightbox" role="dialog" aria-modal="true">
+  <button class="vd-lb-close" id="vdLbClose">&times;</button>
+  <button class="vd-lb-prev" id="vdLbPrev">&#8249;</button>
+  <button class="vd-lb-next" id="vdLbNext">&#8250;</button>
+  <img id="vdLbImg" src="" alt="Photo agrandie" />
+  <div class="vd-lb-counter" id="vdLbCounter"></div>
 </div>
 
 <script src="js/main.js"></script>
 <script>
-(function () {
-  var photos = [
-    "Ford%20Kuga/20260329_161751000_iOS.jpg",
-    "Ford%20Kuga/20260329_121715000_iOS%203.jpg",
-    "Ford%20Kuga/20260329_121715000_iOS%204.jpg",
-    "Ford%20Kuga/20260329_121715000_iOS.jpg",
-    "Ford%20Kuga/20260329_121716000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_121716000_iOS.jpg",
-    "Ford%20Kuga/20260329_122946000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_122946000_iOS%202.jpg",
-    "Ford%20Kuga/20260329_122946000_iOS.jpg",
-    "Ford%20Kuga/20260329_122947000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_122947000_iOS%202.jpg",
-    "Ford%20Kuga/20260329_122947000_iOS%203.jpg",
-    "Ford%20Kuga/20260329_122947000_iOS.jpg",
-    "Ford%20Kuga/20260329_122948000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_122948000_iOS%203.jpg",
-    "Ford%20Kuga/20260329_122948000_iOS%204.jpg",
-    "Ford%20Kuga/20260329_122948000_iOS.jpg",
-    "Ford%20Kuga/20260329_122949000_iOS.jpg",
-    "Ford%20Kuga/20260329_161749000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_161749000_iOS.jpg",
-    "Ford%20Kuga/20260329_161750000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_161750000_iOS.jpg",
-    "Ford%20Kuga/20260329_161751000_iOS%201.jpg",
-    "Ford%20Kuga/20260329_161753000_iOS.jpg"
+(function(){
+  const photos = [
+    'Ford%20Kuga/20260329_121715000_iOS.jpg',
+    'Ford%20Kuga/20260329_121715000_iOS%203.jpg',
+    'Ford%20Kuga/20260329_121715000_iOS%204.jpg',
+    'Ford%20Kuga/20260329_121716000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_121716000_iOS.jpg',
+    'Ford%20Kuga/20260329_122946000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_122946000_iOS%202.jpg',
+    'Ford%20Kuga/20260329_122946000_iOS.jpg',
+    'Ford%20Kuga/20260329_122947000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_122947000_iOS%202.jpg',
+    'Ford%20Kuga/20260329_122947000_iOS%203.jpg',
+    'Ford%20Kuga/20260329_122947000_iOS.jpg',
+    'Ford%20Kuga/20260329_122948000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_122948000_iOS%203.jpg',
+    'Ford%20Kuga/20260329_122948000_iOS%204.jpg',
+    'Ford%20Kuga/20260329_122948000_iOS.jpg',
+    'Ford%20Kuga/20260329_122949000_iOS.jpg',
+    'Ford%20Kuga/20260329_161749000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_161749000_iOS.jpg',
+    'Ford%20Kuga/20260329_161750000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_161750000_iOS.jpg',
+    'Ford%20Kuga/20260329_161751000_iOS%201.jpg',
+    'Ford%20Kuga/20260329_161751000_iOS.jpg',
+    'Ford%20Kuga/20260329_161753000_iOS.jpg'
   ];
+  let idx = 0;
+  const mainImg = document.getElementById('vdMainImg');
+  const mainWrap = document.getElementById('mainWrap');
+  const thumbs = document.querySelectorAll('.vd-thumb');
+  const lb = document.getElementById('vdLb');
+  const lbImg = document.getElementById('vdLbImg');
+  const lbCtr = document.getElementById('vdLbCounter');
 
-  var currentIndex = 0;
-
-  var mainImg = document.getElementById('vd-main-img');
-  var mainWrap = document.getElementById('vd-main-wrap');
-  var thumbs = document.querySelectorAll('.vd-thumb');
-  var lb = document.getElementById('vd-lb');
-  var lbImg = document.getElementById('vd-lb-img');
-  var lbCounter = document.getElementById('vd-lb-counter');
-  var lbClose = document.getElementById('vd-lb-close');
-  var lbPrev = document.getElementById('vd-lb-prev');
-  var lbNext = document.getElementById('vd-lb-next');
-
-  // Thumbnail click -> update main photo
-  thumbs.forEach(function (thumb, index) {
-    thumb.addEventListener('click', function () {
-      var src = thumb.getAttribute('data-src');
-      mainImg.src = src;
-      currentIndex = index;
-      thumbs.forEach(function (t) { t.classList.remove('active'); });
-      thumb.classList.add('active');
-    });
-  });
-
-  // Main photo click -> open lightbox
-  mainWrap.addEventListener('click', function () {
-    openLightbox(currentIndex);
-  });
-
-  function openLightbox(index) {
-    currentIndex = index;
-    lbImg.src = photos[currentIndex];
-    updateCounter();
-    lb.classList.add('active');
-    document.body.style.overflow = 'hidden';
+  function setActive(i) {
+    idx = i;
+    mainImg.src = photos[i];
+    thumbs.forEach((t,j) => t.classList.toggle('active', j === i));
   }
+  thumbs.forEach((t,i) => t.addEventListener('click', () => setActive(i)));
 
-  function closeLightbox() {
-    lb.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+  function lbShow() { lbImg.src = photos[idx]; lbCtr.textContent = (idx+1)+' / '+photos.length; }
+  function lbOpen(i) { idx = i; lbShow(); lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function lbClose() { lb.classList.remove('open'); document.body.style.overflow=''; }
 
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-    lbImg.src = photos[currentIndex];
-    updateCounter();
-  }
-
-  function showNext() {
-    currentIndex = (currentIndex + 1) % photos.length;
-    lbImg.src = photos[currentIndex];
-    updateCounter();
-  }
-
-  function updateCounter() {
-    lbCounter.textContent = (currentIndex + 1) + ' / ' + photos.length;
-  }
-
-  lbClose.addEventListener('click', closeLightbox);
-  lbPrev.addEventListener('click', showPrev);
-  lbNext.addEventListener('click', showNext);
-
-  lb.addEventListener('click', function (e) {
-    if (e.target === lb) {
-      closeLightbox();
-    }
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (!lb.classList.contains('active')) return;
-    if (e.key === 'Escape') {
-      closeLightbox();
-    } else if (e.key === 'ArrowLeft') {
-      showPrev();
-    } else if (e.key === 'ArrowRight') {
-      showNext();
-    }
+  mainWrap.addEventListener('click', () => lbOpen(idx));
+  document.getElementById('vdLbClose').addEventListener('click', lbClose);
+  document.getElementById('vdLbPrev').addEventListener('click', () => { idx=(idx-1+photos.length)%photos.length; lbShow(); });
+  document.getElementById('vdLbNext').addEventListener('click', () => { idx=(idx+1)%photos.length; lbShow(); });
+  lb.addEventListener('click', e => { if(e.target===lb) lbClose(); });
+  document.addEventListener('keydown', e => {
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') lbClose();
+    if(e.key==='ArrowLeft') { idx=(idx-1+photos.length)%photos.length; lbShow(); }
+    if(e.key==='ArrowRight') { idx=(idx+1)%photos.length; lbShow(); }
   });
 })();
 </script>
-
 </body>
 </html>
