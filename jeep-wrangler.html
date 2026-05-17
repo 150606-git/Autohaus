@@ -109,8 +109,21 @@
       </div>
 
       <div class="vd-photo-col">
-        <div class="vd-main-wrap vd-main-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#c8c8c8" stroke-width="1.2"><path d="M14 16H9m10 0h3v-3.3a4 4 0 0 0-2.2-3.6L17 8l-2-4H9L7 8l-2.8 1.1A4 4 0 0 0 2 12.7V16h3"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+        <div class="vd-main-wrap" id="mainWrap" style="cursor:zoom-in">
+          <img id="vdMainImg" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/devanture.jpg" alt="Jeep Wrangler" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:10px" />
+          <div class="vd-zoom-hint">&#128269;</div>
+        </div>
+        <div class="vd-thumbs">
+          <img class="vd-thumb active" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/devanture.jpg" alt="Photo 1" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165723000_iOS.jpg" alt="Photo 2" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS.jpg" alt="Photo 3" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS%201.jpg" alt="Photo 4" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS%202.jpg" alt="Photo 5" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS.jpg" alt="Photo 6" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%202.jpg" alt="Photo 7" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%203.jpg" alt="Photo 8" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%204.jpg" alt="Photo 9" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165726000_iOS.jpg" alt="Photo 10" />
         </div>
       </div>
     </div>
@@ -176,6 +189,47 @@
   </div>
 </footer>
 <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&#8679;</button>
+<div id="vdLb" class="vd-lightbox" role="dialog" aria-modal="true">
+  <button class="vd-lb-close" id="vdLbClose">&times;</button>
+  <button class="vd-lb-prev" id="vdLbPrev">&#8249;</button>
+  <button class="vd-lb-next" id="vdLbNext">&#8250;</button>
+  <img id="vdLbImg" src="" alt="Photo agrandie" />
+  <div class="vd-lb-counter" id="vdLbCounter"></div>
+</div>
 <script src="js/main.js"></script>
+<script>
+(function(){
+  const photos = [
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/devanture.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165723000_iOS.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS%201.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165724000_iOS%202.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%202.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%203.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165725000_iOS%204.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Jeep%20Wrangler/20260330_165726000_iOS.jpg'
+  ];
+  let idx = 0;
+  const mainImg = document.getElementById('vdMainImg');
+  const mainWrap = document.getElementById('mainWrap');
+  const thumbs = document.querySelectorAll('.vd-thumb');
+  const lb = document.getElementById('vdLb');
+  const lbImg = document.getElementById('vdLbImg');
+  const lbCtr = document.getElementById('vdLbCounter');
+  function setActive(i){ idx=i; mainImg.src=photos[i]; thumbs.forEach((t,j)=>t.classList.toggle('active',j===i)); }
+  thumbs.forEach((t,i)=>t.addEventListener('click',()=>setActive(i)));
+  function lbShow(){ lbImg.src=photos[idx]; lbCtr.textContent=(idx+1)+' / '+photos.length; }
+  function lbOpen(i){ idx=i; lbShow(); lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function lbClose(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+  mainWrap.addEventListener('click',()=>lbOpen(idx));
+  document.getElementById('vdLbClose').addEventListener('click',lbClose);
+  document.getElementById('vdLbPrev').addEventListener('click',()=>{ idx=(idx-1+photos.length)%photos.length; lbShow(); });
+  document.getElementById('vdLbNext').addEventListener('click',()=>{ idx=(idx+1)%photos.length; lbShow(); });
+  lb.addEventListener('click',e=>{ if(e.target===lb) lbClose(); });
+  document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open')) return; if(e.key==='Escape') lbClose(); if(e.key==='ArrowLeft'){ idx=(idx-1+photos.length)%photos.length; lbShow(); } if(e.key==='ArrowRight'){ idx=(idx+1)%photos.length; lbShow(); } });
+})();
+</script>
 </body>
 </html>
