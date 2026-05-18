@@ -1109,22 +1109,41 @@
 
   <script src="js/main.js"></script>
   <script>
-    /* ── Pagination ── */
+    /* ── Pagination + Category filter ── */
     (function(){
       var PER_PAGE = 12;
-      var cards = Array.from(document.querySelectorAll('.galerie-grid .g-card'));
-      var total = cards.length;
-      var totalPages = Math.ceil(total / PER_PAGE);
-      var current = 1;
+      var allCards = Array.from(document.querySelectorAll('.galerie-grid .g-card'));
       var pagination = document.getElementById('gPagination');
+      var current = 1;
+      var visibleCards = allCards;
 
-      document.getElementById('heroVehicleCount').textContent = total;
+      /* Read ?category= param */
+      var urlParam = new URLSearchParams(window.location.search).get('category');
+      if (urlParam) {
+        /* Normalise: "muscle-car" → "muscle car", then match case-insensitively
+           against the first segment of .g-category text (before " •") */
+        var needle = urlParam.replace(/-/g, ' ').toLowerCase();
+        visibleCards = allCards.filter(function(card) {
+          var cat = card.querySelector('.g-category');
+          if (!cat) return false;
+          var first = cat.textContent.split('•')[0].trim().toLowerCase();
+          return first === needle;
+        });
+        /* If nothing matched, fall back to all cards */
+        if (visibleCards.length === 0) visibleCards = allCards;
+      }
+
+      /* Hide cards not in current filter */
+      allCards.forEach(function(c) { c.style.display = 'none'; });
+
+      document.getElementById('heroVehicleCount').textContent = visibleCards.length;
 
       function render() {
-        cards.forEach(function(card, i) {
+        visibleCards.forEach(function(card, i) {
           card.style.display = (Math.floor(i / PER_PAGE) + 1 === current) ? '' : 'none';
         });
         pagination.innerHTML = '';
+        var totalPages = Math.ceil(visibleCards.length / PER_PAGE);
 
         var prev = document.createElement('button');
         prev.className = 'g-pag-btn';
