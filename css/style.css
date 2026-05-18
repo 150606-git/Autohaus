@@ -170,11 +170,14 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   transition: all var(--transition);
-  background: transparent;
+  background: rgba(245, 244, 241, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
 }
 
 .header.scrolled {
-  background: rgba(245, 244, 241, 0.97);
+  background: rgba(245, 244, 241, 0.98);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
@@ -481,13 +484,6 @@ h1, h2, h3, h4, h5 {
   50% { transform: translateX(-50%) translateY(8px); }
 }
 
-/* Header transparent state for dark hero */
-.header:not(.scrolled) .logo-main { color: #ffffff; }
-.header:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.82); }
-.header:not(.scrolled) .nav-links a:hover,
-.header:not(.scrolled) .nav-links a.active { color: #ffffff; background: rgba(255,255,255,0.12); }
-.header:not(.scrolled) .nav-phone { color: rgba(255,255,255,0.75); }
-.header:not(.scrolled) .hamburger span { background: #ffffff; }
 
 /* === SECTION LAYOUT === */
 .section {
@@ -2509,16 +2505,6 @@ h1, h2, h3, h4, h5 {
   border-color: var(--accent);
   color: var(--accent);
   background: rgba(224,99,32,0.06);
-}
-.header:not(.scrolled) .lang-sel-btn {
-  border-color: rgba(255,255,255,0.4);
-  color: rgba(255,255,255,0.85);
-}
-.header:not(.scrolled) .lang-sel-btn:hover,
-.header:not(.scrolled) .lang-sel-btn[aria-expanded="true"] {
-  border-color: #fff;
-  color: #fff;
-  background: rgba(255,255,255,0.12);
 }
 
 .lang-sel-menu {
