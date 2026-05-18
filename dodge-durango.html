@@ -31,7 +31,29 @@
       </div>
       <a href="contact.html" class="btn btn-primary">Nous contacter</a>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+          <!-- Language selector -->
+      <div class="lang-sel" id="langSel">
+        <button class="lang-sel-btn" id="langSelBtn" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="langSelCurrent">FR</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-sel-menu" id="langSelMenu" role="menu">
+          <button class="lang-opt" data-lang="fr" data-label="FR">🇫🇷 Français</button>
+          <button class="lang-opt" data-lang="en" data-label="EN">🇬🇧 English</button>
+          <button class="lang-opt" data-lang="de" data-label="DE">🇩🇪 Deutsch</button>
+          <button class="lang-opt" data-lang="es" data-label="ES">🇪🇸 Español</button>
+          <button class="lang-opt" data-lang="it" data-label="IT">🇮🇹 Italiano</button>
+          <button class="lang-opt" data-lang="pt" data-label="PT">🇵🇹 Português</button>
+          <button class="lang-opt" data-lang="nl" data-label="NL">🇳🇱 Nederlands</button>
+          <button class="lang-opt" data-lang="pl" data-label="PL">🇵🇱 Polski</button>
+          <button class="lang-opt" data-lang="ru" data-label="RU">🇷🇺 Русский</button>
+          <button class="lang-opt" data-lang="ar" data-label="AR">🇸🇦 العربية</button>
+          <button class="lang-opt" data-lang="zh-CN" data-label="中文">🇨🇳 中文</button>
+          <button class="lang-opt" data-lang="tr" data-label="TR">🇹🇷 Türkçe</button>
+        </div>
+      </div>
+<button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -43,6 +65,20 @@
   <a href="conditions.html">Conditions d'Export</a>
   <a href="contact.html">Contact</a>
   <a href="tel:+33756841295" class="btn btn-primary">Appeler maintenant</a>
+    <div class="mobile-lang-grid">
+      <button class="lang-opt" data-lang="fr" data-label="FR">🇫🇷 FR</button>
+      <button class="lang-opt" data-lang="en" data-label="EN">🇬🇧 EN</button>
+      <button class="lang-opt" data-lang="de" data-label="DE">🇩🇪 DE</button>
+      <button class="lang-opt" data-lang="es" data-label="ES">🇪🇸 ES</button>
+      <button class="lang-opt" data-lang="it" data-label="IT">🇮🇹 IT</button>
+      <button class="lang-opt" data-lang="pt" data-label="PT">🇵🇹 PT</button>
+      <button class="lang-opt" data-lang="nl" data-label="NL">🇳🇱 NL</button>
+      <button class="lang-opt" data-lang="pl" data-label="PL">🇵🇱 PL</button>
+      <button class="lang-opt" data-lang="ru" data-label="RU">🇷🇺 RU</button>
+      <button class="lang-opt" data-lang="ar" data-label="AR">🇸🇦 AR</button>
+      <button class="lang-opt" data-lang="zh-CN" data-label="中文">🇨🇳 中文</button>
+      <button class="lang-opt" data-lang="tr" data-label="TR">🇹🇷 TR</button>
+    </div>
 </nav>
 
 <main>
@@ -207,5 +243,71 @@
   document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open')) return; if(e.key==='Escape') lbClose(); if(e.key==='ArrowLeft'){ idx=(idx-1+photos.length)%photos.length; lbShow(); } if(e.key==='ArrowRight'){ idx=(idx+1)%photos.length; lbShow(); } });
 })();
 </script>
+  <!-- Google Translate -->
+  <div id="google_translate_element" style="display:none;visibility:hidden;"></div>
+  <script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr',
+      includedLanguages: 'fr,en,de,es,it,pt,nl,pl,ru,ar,zh-CN,tr',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+  <script>
+  (function(){
+    function getCookie(name) {
+      var m = document.cookie.match(new RegExp('(?:^|;)\\s*' + name + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+    function getCurrentLang() {
+      var c = getCookie('googtrans');
+      if (c) { var p = c.split('/'); return p.length >= 3 ? p[2] : 'fr'; }
+      return 'fr';
+    }
+    var opts = document.querySelectorAll('.lang-opt');
+    var current = document.getElementById('langSelCurrent');
+    var btn = document.getElementById('langSelBtn');
+    var menu = document.getElementById('langSelMenu');
+    var curLang = getCurrentLang();
+
+    opts.forEach(function(opt) {
+      if (opt.dataset.lang === curLang) {
+        opt.classList.add('active');
+        if (current && opt.closest('.lang-sel-menu')) current.textContent = opt.dataset.label;
+      }
+    });
+
+    if (btn && menu) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+      });
+      document.addEventListener('click', function() {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+      menu.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+
+    opts.forEach(function(opt) {
+      opt.addEventListener('click', function() {
+        var lang = this.dataset.lang;
+        var label = this.dataset.label;
+        document.cookie = 'googtrans=/fr/' + lang + '; path=/; max-age=31536000';
+        document.cookie = 'googtrans=/fr/' + lang + '; path=/; domain=.' + location.hostname + '; max-age=31536000';
+        opts.forEach(function(o) { o.classList.remove('active'); });
+        document.querySelectorAll('[data-lang="' + lang + '"]').forEach(function(o) { o.classList.add('active'); });
+        if (current) current.textContent = label;
+        if (menu) menu.classList.remove('open');
+        var combo = document.querySelector('.goog-te-combo');
+        if (combo) { combo.value = lang; combo.dispatchEvent(new Event('change')); }
+        else { location.reload(); }
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
