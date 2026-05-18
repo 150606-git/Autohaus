@@ -2582,9 +2582,9 @@ h1, h2, h3, h4, h5 {
 .mobile-lang-grid .lang-opt:hover { background: var(--explore-bg); color: var(--accent); border-color: var(--accent); }
 .mobile-lang-grid .lang-opt.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* Hide Google Translate native toolbar */
-.goog-te-banner-frame,
-.skiptranslate { display: none !important; }
+/* Hide Google Translate native toolbar — target only the GT iframe, never body */
+.goog-te-banner-frame { display: none !important; }
+iframe.skiptranslate { display: none !important; }
 body { top: 0 !important; }
 .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
 #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
