@@ -222,6 +222,32 @@
       font-size: 0.8rem; letter-spacing: 0.12em; font-weight: 600; pointer-events: none;
     }
 
+    /* ── Pagination ── */
+    .g-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 40px 32px 80px;
+    }
+    .g-pag-btn {
+      min-width: 40px;
+      height: 40px;
+      padding: 0 12px;
+      border: 1.5px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      color: #1a1a2e;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.18s, border-color 0.18s, color 0.18s;
+    }
+    .g-pag-btn:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .g-pag-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; pointer-events: none; }
+    .g-pag-btn:disabled { opacity: 0.35; cursor: default; }
+
     /* ── Responsive ── */
     @media (max-width: 1100px) {
       .galerie-grid { grid-template-columns: repeat(3, 1fr); }
@@ -283,7 +309,7 @@
 
     <div class="galerie-hero">
       <h1>Galerie</h1>
-      <p>18 véhicules disponibles &bull; Garantie 4 ans &bull; Jamais accidentés</p>
+      <p><span id="heroVehicleCount">23</span> véhicules disponibles &bull; Garantie 4 ans &bull; Jamais accidentés</p>
     </div>
 
     <div class="galerie-grid">
@@ -983,6 +1009,7 @@
       </div>
 
     </div>
+    <div id="gPagination" class="g-pagination"></div>
   </div>
 
   <!-- ====== FOOTER ====== -->
@@ -1053,6 +1080,52 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    /* ── Pagination ── */
+    (function(){
+      var PER_PAGE = 12;
+      var cards = Array.from(document.querySelectorAll('.galerie-grid .g-card'));
+      var total = cards.length;
+      var totalPages = Math.ceil(total / PER_PAGE);
+      var current = 1;
+      var pagination = document.getElementById('gPagination');
+
+      document.getElementById('heroVehicleCount').textContent = total;
+
+      function render() {
+        cards.forEach(function(card, i) {
+          card.style.display = (Math.floor(i / PER_PAGE) + 1 === current) ? '' : 'none';
+        });
+        pagination.innerHTML = '';
+
+        var prev = document.createElement('button');
+        prev.className = 'g-pag-btn';
+        prev.textContent = '‹';
+        prev.disabled = current === 1;
+        prev.addEventListener('click', function(){ if (current > 1) { current--; render(); window.scrollTo({top: 0, behavior: 'smooth'}); } });
+        pagination.appendChild(prev);
+
+        for (var p = 1; p <= totalPages; p++) {
+          (function(pg) {
+            var btn = document.createElement('button');
+            btn.className = 'g-pag-btn' + (pg === current ? ' active' : '');
+            btn.textContent = pg;
+            btn.addEventListener('click', function(){ current = pg; render(); window.scrollTo({top: 0, behavior: 'smooth'}); });
+            pagination.appendChild(btn);
+          })(p);
+        }
+
+        var next = document.createElement('button');
+        next.className = 'g-pag-btn';
+        next.textContent = '›';
+        next.disabled = current === totalPages;
+        next.addEventListener('click', function(){ if (current < totalPages) { current++; render(); window.scrollTo({top: 0, behavior: 'smooth'}); } });
+        pagination.appendChild(next);
+      }
+
+      render();
+    })();
+  </script>
   <script>
     /* Wire up galerie cards to the lightbox */
     document.addEventListener('DOMContentLoaded', () => {
