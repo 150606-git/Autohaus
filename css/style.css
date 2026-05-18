@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 1.25rem;
-  color: var(--text);
+  color: #1a2744 !important;
   letter-spacing: 0.05em;
 }
 
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: #1a2744 !important;
   transition: all var(--transition);
 }
 
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5 {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--text);
+  background: #1a2744 !important;
   transition: all var(--transition);
   border-radius: 2px;
 }
@@ -2488,10 +2488,10 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   gap: 5px;
   padding: 6px 11px;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid #1a2744;
   border-radius: 6px;
   background: transparent;
-  color: var(--text-light);
+  color: #1a2744 !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.73rem;
   font-weight: 700;
