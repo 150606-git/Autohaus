@@ -1533,8 +1533,8 @@ h1, h2, h3, h4, h5 {
 /* === BOUTIQUE PAGE === */
 .page-hero {
   padding: calc(var(--header-h) + 60px) 32px 60px;
-  background: var(--secondary);
-  border-bottom: 1px solid var(--border);
+  background: #1a2744;
+  border-bottom: none;
 }
 
 .page-hero-inner {
@@ -1548,21 +1548,21 @@ h1, h2, h3, h4, h5 {
   gap: 8px;
   margin-bottom: 16px;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.6);
 }
 
 .breadcrumb a { color: var(--accent); }
-.breadcrumb span { color: var(--text-muted); }
+.breadcrumb span { color: rgba(255,255,255,0.6); }
 
 .page-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--text);
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .page-desc {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.75);
 }
 
 .boutique-layout {
