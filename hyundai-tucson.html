@@ -107,8 +107,24 @@
       </div>
 
       <div class="vd-photo-col">
-        <div class="vd-main-wrap vd-main-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#c8c8c8" stroke-width="1.2"><path d="M14 16H9m10 0h3v-3.3a4 4 0 0 0-2.2-3.6L17 8l-2-4H9L7 8l-2.8 1.1A4 4 0 0 0 2 12.7V16h3"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+        <div class="vd-main-wrap" id="mainWrap" style="cursor:zoom-in">
+          <img id="vdMainImg" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/Devanture.jpg" alt="Hyundai Tucson 1.7 CRDi" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="vd-thumbs">
+          <img class="vd-thumb active" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/Devanture.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%201.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%202.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%203.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%204.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%205.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%201.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%202.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%203.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%201.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%202.jpg" alt="" />
+          <img class="vd-thumb" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%203.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -175,5 +191,38 @@
 </footer>
 <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">&#8679;</button>
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var photos = [
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/Devanture.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%201.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%202.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%203.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%204.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172100000_iOS%205.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%201.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%202.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172101000_iOS%203.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%201.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%202.jpg',
+    'https://raw.githubusercontent.com/150606-git/Autohaus/main/Hyundai%20Tucson%201.7/20260329_172102000_iOS%203.jpg'
+  ];
+  var main = document.getElementById('vdMainImg');
+  var thumbs = document.querySelectorAll('.vd-thumb');
+  var current = 0;
+  function show(i){ current=i; main.src=photos[i]; thumbs.forEach(function(t,j){t.classList.toggle('active',j===i);}); }
+  thumbs.forEach(function(t,i){ t.addEventListener('click',function(){show(i);}); });
+  var wrap = document.getElementById('mainWrap');
+  var lb = document.createElement('div');
+  lb.style.cssText='display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out';
+  var lbImg = document.createElement('img');
+  lbImg.style.cssText='max-width:92vw;max-height:92vh;object-fit:contain;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.6)';
+  lb.appendChild(lbImg); document.body.appendChild(lb);
+  wrap.addEventListener('click',function(){ lbImg.src=photos[current]; lb.style.display='flex'; });
+  lb.addEventListener('click',function(){ lb.style.display='none'; });
+})();
+</script>
 </body>
 </html>
