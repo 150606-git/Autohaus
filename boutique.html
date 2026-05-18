@@ -1136,7 +1136,8 @@
       /* Hide cards not in current filter */
       allCards.forEach(function(c) { c.style.display = 'none'; });
 
-      document.getElementById('heroVehicleCount').textContent = visibleCards.length;
+      var countEl = document.getElementById('heroVehicleCount');
+      if (countEl) countEl.textContent = visibleCards.length;
 
       function render() {
         visibleCards.forEach(function(card, i) {
