@@ -2562,8 +2562,6 @@ h1, h2, h3, h4, h5 {
   .vd-sim-grid { grid-template-columns: repeat(2, 1fr); }
   .vd-price { font-size: 2.2rem; }
   .vd-cta, .vd-call { padding: 13px 16px; }
-  /* Photo en premier sur mobile */
-  .vd-photo-col { order: -1; }
   /* Photo compacte pour laisser place aux miniatures */
   .vd-main-wrap { aspect-ratio: unset; height: 240px; max-height: 240px; }
 }
