@@ -245,7 +245,7 @@
     /* ── Responsive ── */
     @media (max-width: 768px) {
       .galerie-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         grid-auto-rows: 360px;
         gap: 14px;
         padding: 0 16px 80px;
@@ -258,16 +258,20 @@
     }
     @media (max-width: 480px) {
       .galerie-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 340px;
-        gap: 12px;
-        padding: 0 12px 56px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: auto;
+        gap: 10px;
+        padding: 0 10px 48px;
       }
       .galerie-hero { padding: calc(var(--header-h) + 20px) 12px 24px; }
       .galerie-hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .galerie-hero p { font-size: 0.85rem; }
-      .g-img { height: 190px; }
-      .g-body { padding: 14px 12px 16px; }
+      .g-img { height: 150px !important; }
+      .g-img img { height: 150px !important; object-fit: cover; }
+      .g-body { padding: 10px 8px 12px; }
+      .g-name { font-size: 0.81rem; }
+      .g-price { font-size: 0.94rem; }
+      .g-btn { font-size: 0.62rem; padding: 7px 10px; }
       .g-pag-nav { padding: 0 10px; font-size: 0.75rem; }
       .g-pagination { gap: 4px; }
     }
@@ -837,7 +841,7 @@
       <!-- ── Peugeot 3008 1.6 HDI Allure ── -->
       <div class="g-card" onclick="location.href='peugeot-3008.html'">
         <div class="g-img">
-          <img class="b-main-img" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Peugeot%203008/WhatsApp%20Image%202026-05-18%20at%2015.32.13%20(2).jpeg" alt="Peugeot 3008 1.6 HDI Allure">
+          <img class="b-main-img" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Peugeot%203008/Devanture.jpeg" alt="Peugeot 3008 1.6 HDI Allure">
           <div class="g-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
           <span class="g-badge">Disponible</span>
         </div>
@@ -867,7 +871,7 @@
       <!-- ── Mitsubishi Outlander PHEV 4WD ── -->
       <div class="g-card" onclick="location.href='mitsubishi-outlander.html'">
         <div class="g-img">
-          <img class="b-main-img" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Mitsubidhi%20Outlander%20PHEV/WhatsApp%20Image%202026-05-18%20at%2015.32.06%20(1).jpeg" alt="Mitsubishi Outlander PHEV 4WD">
+          <img class="b-main-img" src="https://raw.githubusercontent.com/150606-git/Autohaus/main/Mitsubidhi%20Outlander%20PHEV/Devanture.jpeg" alt="Mitsubishi Outlander PHEV 4WD">
           <div class="g-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
           <span class="g-badge">Disponible</span>
         </div>
