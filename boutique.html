@@ -321,7 +321,8 @@
   <div class="galerie-wrap">
 
     <div class="galerie-hero">
-      <h1>Galerie</h1>
+      <h1>Nos Véhicules</h1>
+      <p id="galerie-status" style="font-size:1rem;color:#e85d04;font-weight:700;margin-top:8px;">Chargement…</p>
     </div>
 
     <div class="galerie-grid">
@@ -988,6 +989,8 @@
       var current = 1;
       var totalPages = Math.ceil(allCards.length / PER_PAGE);
 
+      var statusEl = document.getElementById('galerie-status');
+
       function render() {
         allCards.forEach(function(card, i) {
           var page = Math.floor(i / PER_PAGE) + 1;
@@ -997,6 +1000,10 @@
             card.classList.add('g-hidden');
           }
         });
+
+        if (statusEl) {
+          statusEl.textContent = allCards.length + ' véhicules · Page ' + current + ' / ' + totalPages;
+        }
 
         pagination.innerHTML = '';
 
