@@ -99,11 +99,11 @@
           <h3 style="color:var(--text); font-size:1.2rem; margin-bottom:8px;">Envoyez-nous un message</h3>
           <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:28px;">Remplissez le formulaire et nous vous répondrons rapidement.</p>
 
-          <form id="contactForm" onsubmit="handleSubmit(event)">
+          <form id="contactForm">
             <div class="form-grid">
               <div class="form-group full">
                 <label for="nom">Nom *</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                <input type="text" id="nom" name="name" placeholder="Votre nom complet" required>
               </div>
               <div class="form-group full">
                 <label for="email">Email *</label>
@@ -114,15 +114,20 @@
                 <textarea id="message" name="message" rows="7" placeholder="Décrivez votre demande..." required></textarea>
               </div>
             </div>
+            <input type="hidden" name="_subject" value="Nouveau message – Autohaus">
 
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:16px; margin-top:8px;">
+            <button type="submit" id="formSubmitBtn" class="btn btn-primary" style="width:100%; justify-content:center; padding:16px; margin-top:8px;">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               Envoyer le message
             </button>
 
             <div id="formSuccess" style="display:none; margin-top:16px; background:rgba(42,157,92,0.1); border:1px solid rgba(42,157,92,0.3); border-radius:var(--radius); padding:16px; text-align:center;">
               <div style="color:#2a9d5c; font-family:'Montserrat',sans-serif; font-weight:700; margin-bottom:4px;">✓ Message envoyé !</div>
-              <div style="font-size:0.84rem; color:var(--text-muted);">Votre message a bien été envoyé.</div>
+              <div style="font-size:0.84rem; color:var(--text-muted);">Nous vous répondrons dans les plus brefs délais.</div>
+            </div>
+            <div id="formError" style="display:none; margin-top:16px; background:rgba(220,53,69,0.1); border:1px solid rgba(220,53,69,0.3); border-radius:var(--radius); padding:16px; text-align:center;">
+              <div style="color:#dc3545; font-family:'Montserrat',sans-serif; font-weight:700; margin-bottom:4px;">Erreur d'envoi</div>
+              <div style="font-size:0.84rem; color:var(--text-muted);">Veuillez réessayer ou nous contacter par email.</div>
             </div>
           </form>
         </div>
@@ -230,14 +235,35 @@
 
   <script src="js/main.js"></script>
   <script>
-    function handleSubmit(e) {
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      document.getElementById('formSuccess').style.display = 'block';
-      e.target.reset();
-      setTimeout(() => {
-        document.getElementById('formSuccess').style.display = 'none';
-      }, 6000);
-    }
+      var form = this;
+      var btn = document.getElementById('formSubmitBtn');
+      var successEl = document.getElementById('formSuccess');
+      var errorEl = document.getElementById('formError');
+      btn.disabled = true;
+      btn.textContent = 'Envoi en cours…';
+      successEl.style.display = 'none';
+      errorEl.style.display = 'none';
+      fetch('https://formspree.io/herzoggmbhautohaus@gmail.com', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(resp) {
+        if (resp.ok) {
+          successEl.style.display = 'block';
+          form.reset();
+          setTimeout(function() { successEl.style.display = 'none'; }, 8000);
+        } else {
+          errorEl.style.display = 'block';
+        }
+      }).catch(function() {
+        errorEl.style.display = 'block';
+      }).finally(function() {
+        btn.disabled = false;
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer le message';
+      });
+    });
   </script>
   <!-- Google Translate -->
   <div id="google_translate_element" style="display:none;visibility:hidden;"></div>
