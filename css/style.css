@@ -2078,12 +2078,14 @@ h1, h2, h3, h4, h5 {
   /* Grids */
   .services-grid { grid-template-columns: 1fr; }
   .vehicles-grid { grid-template-columns: repeat(2, 1fr); }
-  .avis-grid { grid-template-columns: 1fr; }
-  .explore-grid { grid-template-columns: 1fr; }
-  .footer-top { grid-template-columns: 1fr; gap: 24px; }
+  .avis-grid { grid-template-columns: repeat(3, 1fr); }
+  .explore-grid { grid-template-columns: repeat(3, 1fr); }
   .form-grid { grid-template-columns: 1fr; }
   .boutique-grid { grid-template-columns: repeat(2, 1fr); }
   .process-steps { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Footer horizontal */
+  .footer-top { grid-template-columns: repeat(2, 1fr); gap: 32px; }
 
   /* Typography */
   .hero-photo-title { font-size: clamp(1.4rem, 5.5vw, 1.75rem) !important; }
