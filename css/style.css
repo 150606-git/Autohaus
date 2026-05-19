@@ -2056,20 +2056,82 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 768px) {
+  /* Navigation */
   .nav-links { display: none; }
   .nav-phone { display: none; }
   .hamburger { display: flex; }
   .mobile-nav { display: flex; }
 
-  .section { padding: 70px 20px; }
+  /* Layout */
+  .section { padding: 60px 16px; }
+  .section-inner { padding: 0; }
+
+  /* Grids → single column */
   .services-grid { grid-template-columns: 1fr; }
-  .vehicles-grid { grid-template-columns: 1fr; }
+  .vehicles-grid { grid-template-columns: repeat(2, 1fr); }
   .avis-grid { grid-template-columns: 1fr; }
-  .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .form-grid { grid-template-columns: 1fr; }
+
+  /* Boutique stays 2 columns at tablet (→ 1 col at 480px) */
+  .boutique-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+  /* Process → 2 columns on tablet */
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .process-steps::before { display: none; }
+
+  /* Hero */
+  .hero-photo-content { padding: calc(var(--header-h) + 48px) 20px 80px; }
+  .hero-photo-desc { font-size: 0.975rem; max-width: 100%; }
+  .hero-photo-title { max-width: 100%; }
+  .hero-stats { gap: 24px; }
+
+  /* Footer */
+  .footer { padding: 48px 16px 20px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-bottom { flex-wrap: wrap; gap: 12px; }
+}
+
+@media (max-width: 480px) {
+  /* Layout */
+  .section { padding: 48px 16px; }
+
+  /* Navigation */
+  .mobile-nav a { font-size: 1rem; }
+
+  /* Hero */
+  .hero-photo-content { padding: calc(var(--header-h) + 32px) 16px 72px; }
+  .hero-photo-desc { font-size: 0.875rem; margin-bottom: 32px; }
+  .hero-photo-title { font-size: clamp(2rem, 8vw, 3.2rem); }
+  .hero-photo-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+  .hero-photo-actions .btn,
+  .hero-photo-actions .btn-outline-white { width: 100%; justify-content: center; }
+  .hero-stats { flex-direction: column; gap: 20px; align-items: flex-start; }
+
+  /* Grids */
+  .vehicles-grid { grid-template-columns: 1fr; }
   .boutique-grid { grid-template-columns: 1fr; }
-  .hero-photo-content { padding: calc(var(--header-h) + 60px) 20px 100px; }
-  .footer { padding: 48px 20px 20px; }
+  .process-steps { grid-template-columns: 1fr; gap: 32px; }
+  .guarantees-grid { gap: 16px; }
+  .guarantee-card { padding: 20px 16px; gap: 14px; }
+
+  /* Explore cards */
+  .explore-card { height: 320px; }
+  .explore-grid { gap: 16px; }
+
+  /* Avis */
+  .avis-card { padding: 20px 16px; }
+
+  /* Footer */
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  .footer-bottom-links { flex-direction: column; align-items: center; gap: 8px; }
+
+  /* Contact */
+  .contact-info-item { flex-direction: column; gap: 8px; }
+
+  /* Page hero (boutique, contact, conditions) */
+  .page-hero { padding: calc(var(--header-h) + 24px) 16px 28px; }
+  .page-hero-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
 }
 /* ============================================================
    VEHICLE DETAIL PAGE
@@ -2463,13 +2525,29 @@ h1, h2, h3, h4, h5 {
   .vd-info { position: static; }
 }
 @media (max-width: 768px) {
-  .vd-container { padding: 0 20px; }
-  .vd-desc-cols { grid-template-columns: 1fr; gap: 32px; }
+  .vd-container { padding: 0 16px; }
+  .vd-desc-cols { grid-template-columns: 1fr; gap: 24px; }
   .vd-sim-grid { grid-template-columns: repeat(2, 1fr); }
+  .vd-price { font-size: 2.2rem; }
+  .vd-breadcrumb { padding-top: calc(var(--header-h) + 16px); }
 }
 @media (max-width: 480px) {
+  .vd-container { padding: 0 12px; }
   .vd-sim-grid { grid-template-columns: 1fr; }
-  .vd-thumbs { grid-template-columns: repeat(4, 1fr); gap: 5px; }
+  .vd-price { font-size: 2rem; }
+  /* Thumbs: horizontal scroll strip */
+  .vd-thumbs {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    grid-template-columns: unset;
+  }
+  .vd-thumbs::-webkit-scrollbar { display: none; }
+  .vd-thumb { flex: 0 0 80px; width: 80px; height: 60px; aspect-ratio: unset; }
+  .vd-specs th, .vd-specs td { padding: 9px 12px; font-size: 0.8rem; }
 }
 
 /* ── Language Selector ── */
