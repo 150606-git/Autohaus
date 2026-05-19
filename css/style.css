@@ -2564,14 +2564,14 @@ h1, h2, h3, h4, h5 {
   .vd-cta, .vd-call { padding: 13px 16px; }
   /* Photo en premier sur mobile */
   .vd-photo-col { order: -1; }
-  /* Réduire la photo pour que les miniatures soient visibles */
-  .vd-main-wrap { aspect-ratio: 16/10; max-height: 58vw; }
+  /* Photo compacte pour laisser place aux miniatures */
+  .vd-main-wrap { aspect-ratio: unset; height: 240px; max-height: 240px; }
 }
 @media (max-width: 480px) {
   .vd-container { padding: 0 12px; }
   .vd-sim-grid { grid-template-columns: 1fr; }
-  /* Image encore plus compacte sur iPhone */
-  .vd-main-wrap { aspect-ratio: 16/9; max-height: 54vw; }
+  /* Image compacte sur iPhone */
+  .vd-main-wrap { aspect-ratio: unset; height: 200px; max-height: 200px; }
   /* Miniatures : grille 5 colonnes visible d'un coup */
   .vd-thumbs {
     display: grid;
