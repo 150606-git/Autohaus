@@ -2125,17 +2125,17 @@ h1, h2, h3, h4, h5 {
   .hero-photo-actions .btn,
   .hero-photo-actions .btn-outline-white { width: 100%; justify-content: center; }
 
-  /* Grids → 2 colonnes */
-  .vehicles-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .explore-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .avis-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .boutique-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .guarantees-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  /* Grids → 3 colonnes */
+  .vehicles-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .explore-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .avis-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .boutique-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .guarantees-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .process-steps { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
-  /* Footer → 2 colonnes */
-  .footer-top { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  /* Footer → 3 colonnes */
+  .footer-top { grid-template-columns: repeat(3, 1fr); gap: 16px; }
 
   /* Cards */
   .service-card { padding: 16px 12px; }
