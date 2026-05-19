@@ -205,6 +205,7 @@
     }
 
     /* ── Pagination ── */
+    .g-card.g-hidden { display: none !important; }
     .g-pagination {
       display: flex;
       align-items: center;
@@ -977,48 +978,33 @@
     })();
   </script>
   <script>
-    /* ── Pagination + Category filter ── */
+    /* ── Pagination ── */
     (function(){
       var PER_PAGE = 12;
-      var allCards = Array.from(document.querySelectorAll('.galerie-grid .g-card'));
+      var allCards = Array.from(document.querySelectorAll('.g-card'));
       var pagination = document.getElementById('gPagination');
+      if (!allCards.length || !pagination) return;
+
       var current = 1;
-      var visibleCards = allCards;
-
-      /* Read ?category= param */
-      var urlParam = new URLSearchParams(window.location.search).get('category');
-      if (urlParam) {
-        /* Normalise: "muscle-car" → "muscle car", then match case-insensitively
-           against the first segment of .g-category text (before " •") */
-        var needle = urlParam.replace(/-/g, ' ').toLowerCase();
-        visibleCards = allCards.filter(function(card) {
-          var cat = card.querySelector('.g-category');
-          if (!cat) return false;
-          var first = cat.textContent.split('•')[0].trim().toLowerCase();
-          return first === needle;
-        });
-        /* If nothing matched, fall back to all cards */
-        if (visibleCards.length === 0) visibleCards = allCards;
-      }
-
-      /* Hide cards not in current filter */
-      allCards.forEach(function(c) { c.style.display = 'none'; });
-
-      var countEl = document.getElementById('heroVehicleCount');
-      if (countEl) countEl.textContent = visibleCards.length;
+      var totalPages = Math.ceil(allCards.length / PER_PAGE);
 
       function render() {
-        visibleCards.forEach(function(card, i) {
-          card.style.display = (Math.floor(i / PER_PAGE) + 1 === current) ? '' : 'none';
+        allCards.forEach(function(card, i) {
+          var page = Math.floor(i / PER_PAGE) + 1;
+          if (page === current) {
+            card.classList.remove('g-hidden');
+          } else {
+            card.classList.add('g-hidden');
+          }
         });
+
         pagination.innerHTML = '';
-        var totalPages = Math.ceil(visibleCards.length / PER_PAGE);
 
         var prev = document.createElement('button');
         prev.className = 'g-pag-btn g-pag-nav';
         prev.textContent = '← Précédent';
-        prev.disabled = current === 1;
-        prev.addEventListener('click', function(){ if (current > 1) { current--; render(); window.scrollTo({top: 0, behavior: 'smooth'}); } });
+        prev.disabled = (current === 1);
+        prev.onclick = function() { if (current > 1) { current--; render(); window.scrollTo(0, 0); } };
         pagination.appendChild(prev);
 
         for (var p = 1; p <= totalPages; p++) {
@@ -1026,7 +1012,7 @@
             var btn = document.createElement('button');
             btn.className = 'g-pag-btn' + (pg === current ? ' active' : '');
             btn.textContent = pg;
-            btn.addEventListener('click', function(){ current = pg; render(); window.scrollTo({top: 0, behavior: 'smooth'}); });
+            btn.onclick = function() { current = pg; render(); window.scrollTo(0, 0); };
             pagination.appendChild(btn);
           })(p);
         }
@@ -1034,8 +1020,8 @@
         var next = document.createElement('button');
         next.className = 'g-pag-btn g-pag-nav';
         next.textContent = 'Suivant →';
-        next.disabled = current === totalPages;
-        next.addEventListener('click', function(){ if (current < totalPages) { current++; render(); window.scrollTo({top: 0, behavior: 'smooth'}); } });
+        next.disabled = (current === totalPages);
+        next.onclick = function() { if (current < totalPages) { current++; render(); window.scrollTo(0, 0); } };
         pagination.appendChild(next);
       }
 
