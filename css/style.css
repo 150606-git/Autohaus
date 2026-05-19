@@ -2132,6 +2132,10 @@ h1, h2, h3, h4, h5 {
   .boutique-grid { grid-template-columns: 1fr; }
   .avis-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+  .explore-grid { grid-template-columns: 1fr; }
+
+  /* Footer → colonne verticale sur iPhone */
+  .footer-top { grid-template-columns: 1fr; gap: 20px; }
 
   /* Cards */
   .service-card { padding: 24px 16px; }
