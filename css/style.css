@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -2082,6 +2083,14 @@ h1, h2, h3, h4, h5 {
   .footer-top { grid-template-columns: 1fr; gap: 24px; }
   .form-grid { grid-template-columns: 1fr; }
   .boutique-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-steps { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Typography */
+  .hero-photo-title { font-size: clamp(1.4rem, 5.5vw, 1.75rem) !important; }
+  .section-title { font-size: clamp(1.3rem, 5vw, 1.75rem); }
+
+  /* Buttons */
+  .btn { min-height: 44px; }
 
   /* Footer */
   .footer { padding: 48px 16px 20px; }
