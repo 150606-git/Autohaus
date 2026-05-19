@@ -2095,16 +2095,20 @@ h1, h2, h3, h4, h5 {
   /* Layout */
   .section { padding: 48px 16px; }
 
-  /* Navigation */
+  /* Navigation — keep logo subtitle visible */
+  .logo-main { font-size: 1.1rem; }
+  .logo-sub { font-size: 0.55rem; }
   .mobile-nav a { font-size: 1rem; }
 
-  /* Hero */
-  .hero-photo-content { padding: calc(var(--header-h) + 32px) 16px 72px; }
-  .hero-photo-desc { font-size: 0.875rem; margin-bottom: 32px; }
-  .hero-photo-title { font-size: clamp(2rem, 8vw, 3.2rem); }
-  .hero-photo-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+  /* Hero — cap height at 60vh on phones */
+  .hero { min-height: 60vh; max-height: 60vh; }
+  .hero-photo-content { padding: calc(var(--header-h) + 20px) 16px 48px; }
+  .hero-photo-desc { font-size: 0.82rem; margin-bottom: 24px; line-height: 1.6; }
+  .hero-photo-title { font-size: clamp(1.7rem, 7.5vw, 2.6rem); margin-bottom: 16px; }
+  .hero-eyebrow { font-size: 0.62rem; margin-bottom: 16px; padding: 4px 14px; }
+  .hero-photo-actions { flex-direction: column; align-items: stretch; gap: 10px; }
   .hero-photo-actions .btn,
-  .hero-photo-actions .btn-outline-white { width: 100%; justify-content: center; }
+  .hero-photo-actions .btn-outline-white { width: 100%; justify-content: center; padding: 12px 20px; }
   .hero-stats { flex-direction: column; gap: 20px; align-items: flex-start; }
 
   /* Grids */
@@ -2522,7 +2526,8 @@ h1, h2, h3, h4, h5 {
 /* Responsive */
 @media (max-width: 1024px) {
   .vd-hero { grid-template-columns: 1fr; gap: 36px; }
-  .vd-info { position: static; }
+  .vd-info { position: static; order: 2; }
+  .vd-photo-col { order: 1; }
 }
 @media (max-width: 768px) {
   .vd-container { padding: 0 16px; }
