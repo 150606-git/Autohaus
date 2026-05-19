@@ -2562,24 +2562,28 @@ h1, h2, h3, h4, h5 {
   .vd-sim-grid { grid-template-columns: repeat(2, 1fr); }
   .vd-price { font-size: 2.2rem; }
   .vd-cta, .vd-call { padding: 13px 16px; }
+  /* Photo en premier sur mobile */
+  .vd-photo-col { order: -1; }
+  /* Réduire la photo pour que les miniatures soient visibles */
+  .vd-main-wrap { aspect-ratio: 16/10; max-height: 58vw; }
 }
 @media (max-width: 480px) {
   .vd-container { padding: 0 12px; }
   .vd-sim-grid { grid-template-columns: 1fr; }
-  /* Thumbnail strip → horizontal scroll */
+  /* Image encore plus compacte sur iPhone */
+  .vd-main-wrap { aspect-ratio: 16/9; max-height: 54vw; }
+  /* Miniatures : grille 5 colonnes visible d'un coup */
   .vd-thumbs {
-    display: flex;
-    overflow-x: auto;
-    gap: 6px;
-    padding-bottom: 4px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    grid-template-columns: unset;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    overflow-x: unset;
   }
   .vd-thumb {
-    flex: 0 0 76px;
-    width: 76px;
-    height: 57px;
+    flex: none;
+    width: auto;
+    height: auto;
+    aspect-ratio: 4/3;
     border-radius: 5px;
   }
   .vd-price { font-size: 2rem; }
