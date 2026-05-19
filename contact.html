@@ -287,13 +287,21 @@
         successEl.style.display = 'none';
         errorEl.style.display   = 'none';
 
-        var data = new FormData(form);
-        data.append('access_key', ACCESS_KEY);
+        var payload = JSON.stringify({
+          access_key: ACCESS_KEY,
+          name:    document.getElementById('nom').value.trim(),
+          email:   document.getElementById('email').value.trim(),
+          message: document.getElementById('message').value.trim(),
+          subject: 'Nouveau message – Autohaus'
+        });
 
         fetch(ENDPOINT, {
           method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
+          body: payload,
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          }
         }).then(function (resp) {
           return resp.json();
         }).then(function (json) {
